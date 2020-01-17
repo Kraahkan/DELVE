@@ -1,4 +1,4 @@
-package com.example.discovery
+package com.example.delve
 
 import android.graphics.drawable.ColorDrawable
 import android.os.Build

@@ -7,7 +7,7 @@ android {
     compileSdkVersion 28
     buildToolsVersion "29.0.1"
     defaultConfig {
-        applicationId "com.example.discovery"
+        applicationId "com.example.delve"
         minSdkVersion 16
         targetSdkVersion 28
         versionCode 1

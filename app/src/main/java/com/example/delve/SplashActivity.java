@@ -1,4 +1,4 @@
-package com.example.discovery;
+package com.example.delve;
 
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
