@@ -1,4 +1,4 @@
-package com.example.delve;
+package com.example.discovery;
 
 import org.junit.Test;
 

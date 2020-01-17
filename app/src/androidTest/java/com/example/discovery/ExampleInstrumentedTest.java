@@ -1,4 +1,4 @@
-package com.example.delve;
+package com.example.discovery;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.delve", appContext.getPackageName());
+        assertEquals("com.example.discovery", appContext.getPackageName());
     }
 }
