@@ -11,7 +11,12 @@ import com.bumptech.glide.Glide
 import com.example.discovery.R
 
 class CardStackAdapter(
+
+        // Adapter is just for managing data
+
+        // We will change these to Cards, which can either be Location, or Encounter
         private var spots: List<Spot> = emptyList()
+
 ) : RecyclerView.Adapter<CardStackAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -26,6 +31,9 @@ class CardStackAdapter(
         Glide.with(holder.image)
                 .load(spot.url)
                 .into(holder.image)
+
+        // When we tap the card, do this...
+
         holder.itemView.setOnClickListener { v ->
             Toast.makeText(v.context, spot.name, Toast.LENGTH_SHORT).show()
         }

@@ -1,6 +1,9 @@
 package com.yuyakaido.android.cardstackview.sample
 
 data class Spot(
+
+        // This will be our card
+
         val id: Long = counter++,
         val name: String,
         val city: String,
