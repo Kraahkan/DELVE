@@ -1,5 +1,6 @@
 package com.example.delve
 
+import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Build
 import android.os.Bundle
@@ -11,6 +12,7 @@ import android.view.WindowManager
 import android.view.animation.AccelerateInterpolator
 import android.view.animation.DecelerateInterpolator
 import android.view.animation.LinearInterpolator
+import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
@@ -19,6 +21,7 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.DiffUtil
+import com.github.jinatonic.confetti.CommonConfetti
 import com.google.android.material.navigation.NavigationView
 import com.yuyakaido.android.cardstackview.*
 import com.yuyakaido.android.cardstackview.sample.CardStackAdapter
@@ -46,6 +49,11 @@ class TestActivity : AppCompatActivity(), CardStackListener {
         setupCardStackView()
         setupButton()
         styleStuff()
+
+        val container = findViewById<RelativeLayout>(R.id.container)
+        CommonConfetti.rainingConfetti(container,  intArrayOf(Color.BLACK))
+                .infinite()
+
     }
 
     private fun styleStuff() {
@@ -106,6 +114,9 @@ class TestActivity : AppCompatActivity(), CardStackListener {
     override fun onCardAppeared(view: View, position: Int) {
         val textView = view.findViewById<TextView>(R.id.item_name)
         Log.d("CardStackView", "onCardAppeared: ($position) ${textView.text}")
+
+
+
     }
 
     override fun onCardDisappeared(view: View, position: Int) {
