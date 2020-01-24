@@ -1,0 +1,7 @@
+#Sun Jan 19 10:32:22 PST 2020
+base.0=/Users/carlinoreilly/Downloads/TinderSwipe_Android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_cfa373f05409d2c6faa033058d32318bcfd15790
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/carlinoreilly/Downloads/TinderSwipe_Android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_9e7e06cdf9ff667c540168472668b66cb9a9da44/classes.dex
+base.1=/Users/carlinoreilly/Downloads/TinderSwipe_Android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_9e7e06cdf9ff667c540168472668b66cb9a9da44
+file.0=/Users/carlinoreilly/Downloads/TinderSwipe_Android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_cfa373f05409d2c6faa033058d32318bcfd15790/classes.dex
