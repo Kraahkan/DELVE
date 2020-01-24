@@ -1,4 +1,0 @@
-#Fri Jan 17 19:00:50 PST 2020
-base.0=/Users/carlinoreilly/Downloads/TinderSwipe_Android-master/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7
-renamed.0=classes.dex
-file.0=/Users/carlinoreilly/Downloads/TinderSwipe_Android-master/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex
