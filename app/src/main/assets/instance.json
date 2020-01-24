@@ -1,0 +1,41 @@
+[
+  {
+    "instanceID": 1.2,
+    "title": "Somewhere...",
+    "art": "darkness.png",
+    "soundEffect": "fire.mp3",
+    "ambiance": "blackness.mp3",
+    "music": "wildlife.mp3", 
+    "chapter": "The Fall",
+    "storyText": "In your slumber, a pain like fire sears your head",
+    "positiveText": "Awaken to the world",
+    "negativeText": "Stay in your slumber",
+      
+  },
+    {
+    "instanceID": 1.2,
+    "title": "Somewhere...",
+    "art": "snowstorm.png",
+    "soundEffect": "awaken.mp3",
+    "ambiance": "blizzard.mp3",
+    "music": "wildlife.mp3", 
+    "chapter": "The Fall",
+    "storyText": "You heave eyes open. A snowstorm rages before you",
+    "positiveText": "Listen to the wind",
+    "negativeText": "Move into the cold"
+      
+  },
+     {
+    "instanceID": 1.3,
+    "title": "",
+    "art": "",
+    "soundEffect": "", 
+    "ambiance": "",
+    "music": "", 
+    "chapter": "",
+    "storyText": "",
+    "positiveText": "",
+    "negativeText": ""
+      
+  };
+  ]
