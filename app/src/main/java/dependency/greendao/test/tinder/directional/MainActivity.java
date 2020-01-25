@@ -11,6 +11,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.mindorks.placeholderview.SwipeDecor;
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
     private int mAnimationDuration = 300;
     private boolean isToUndo = false;
     public ProgressBar progBar;
+    public TextView placeText;
 
     int vitalityCount=0;
 
@@ -37,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
         progBar= findViewById(R.id.progressBar);
         mSwipeView =  findViewById(R.id.swipeView);
         mContext = getApplicationContext();
+        placeText = findViewById(R.id.cardTextView);
 
 
 
@@ -69,12 +72,11 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
 
         ArrayList<ArrayList<Instance>> instanceArrayListOuter = Utils.loadInstance(mContext);
 
-//      instance instance = instanceArrayListOuter.get(0).get(0);
-        Instance i2 = new Instance();
-        //addas a card to the stack
-        mSwipeView.addView(new TinderCard(mContext, i2, cardViewHolderSize, this));
-        mSwipeView.addView(new TinderCard(mContext, i2, cardViewHolderSize, this));
-        mSwipeView.addView(new TinderCard(mContext, i2, cardViewHolderSize, this));
+        final Instance instance = instanceArrayListOuter.get(0).get(0);
+
+        mSwipeView.addView(new TinderCard(mContext, instance, cardViewHolderSize, this));
+        mSwipeView.addView(new TinderCard(mContext, instance, cardViewHolderSize, this));
+        mSwipeView.addView(new TinderCard(mContext, instance, cardViewHolderSize, this));
 
         findViewById(R.id.rejectBtn).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -100,9 +102,9 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
             @Override
             public void onItemRemoved(int count) {
                 vitalityCount++;
+
                 if(vitalityCount%3==0){
                     progBar.setProgress(progBar.getProgress()+5);
-
                 }
                 Instance instance = new Instance();
                 mSwipeView.addView(new TinderCard(mContext, instance, cardViewHolderSize, MainActivity.this));

@@ -33,12 +33,15 @@ public class Utils {
             int second;
             GsonBuilder builder = new GsonBuilder();
             Gson gson = builder.create();
+
             JSONArray array = new JSONArray(loadJSONFromAsset(context, "instance.json"));
+            Log.d("utils", "builder");
             ArrayList<Instance> instanceListInner= new ArrayList<Instance>();
 
             ArrayList<ArrayList<Instance>> instanceListOuter = new ArrayList<ArrayList<Instance>>();
-            for (int i = 0; i < 2; i++) {
 
+
+            for (int i = 0; i < 2; i++) {
 
                 Instance instance = gson.fromJson(array.getString(i), Instance.class);
 
@@ -61,6 +64,7 @@ public class Utils {
             return instanceListOuter;
         } catch (Exception e) {
             e.printStackTrace();
+            Log.d("utils", "return null");
             return null;
         }
     }

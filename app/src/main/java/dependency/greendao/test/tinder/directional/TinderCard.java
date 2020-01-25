@@ -36,13 +36,16 @@ public class TinderCard {
     ImageView profileImageView;
 
     @View(R.id.cardTextView)
-    TextView placeText;
+    TextView place;
+
+
+
 
 
     @SwipeView
     android.view.View mSwipeView;
 
-    private Instance instance;
+    private Instance instance1;
     private Context mContext;
     private Point mCardViewHolderSize;
     private Callback mCallback;
@@ -51,21 +54,27 @@ public class TinderCard {
 
     public TinderCard(Context context, Instance instance, Point cardViewHolderSize, Callback callback) {
         mContext = context;
-        instance = instance;
+        instance1 = instance;
         mCardViewHolderSize = cardViewHolderSize;
         mCallback = callback;
-//        placeText.setText(instance.getTitle());
+        Log.d("utils", "constructor"+ instance1.getTitle());
+        String text = instance1.getTitle();
+
+        Log.d("card", "constructor");
 
     }
 
+
     @Resolve
     public void onResolved() {
+
+        place.setText(instance1.getTitle());
         Glide.with(mContext).load(R.mipmap.ic_launcher)
                 .bitmapTransform(new RoundedCornersTransformation(mContext, Utils.dpToPx(7), 0,
                         RoundedCornersTransformation.CornerType.TOP))
                 .into(profileImageView);
         mSwipeView.setAlpha(1);
-        //placeText.setText(titleText);
+
     }
 
     @Click(R.id.profileImageView)
