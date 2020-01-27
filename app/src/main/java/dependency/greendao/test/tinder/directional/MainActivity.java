@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
     private int mAnimationDuration = 300;
     private boolean isToUndo = false;
     public ProgressBar progBar;
-    public TextView placeText;
+    public TextView storyText;
 
     int vitalityCount=0;
 
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
         progBar= findViewById(R.id.progressBar);
         mSwipeView =  findViewById(R.id.swipeView);
         mContext = getApplicationContext();
-        placeText = findViewById(R.id.cardTextView);
+        storyText = findViewById(R.id.storyTextView);
 
 
 
@@ -72,7 +72,8 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
 
         ArrayList<ArrayList<Instance>> instanceArrayListOuter = Utils.loadInstance(mContext);
 
-        final Instance instance = instanceArrayListOuter.get(0).get(0);
+        final Instance instance =new Instance();
+        //Instance instance = new Instance();
 
         mSwipeView.addView(new TinderCard(mContext, instance, cardViewHolderSize, this));
         mSwipeView.addView(new TinderCard(mContext, instance, cardViewHolderSize, this));
@@ -102,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
             @Override
             public void onItemRemoved(int count) {
                 vitalityCount++;
-
+                storyText.setText(instance.getStoryText());
                 if(vitalityCount%3==0){
                     progBar.setProgress(progBar.getProgress()+5);
                 }

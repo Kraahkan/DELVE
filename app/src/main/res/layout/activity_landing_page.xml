@@ -28,14 +28,6 @@
         android:layout_margin="180dp"
         android:foregroundGravity="center_vertical|center|center_horizontal" />
 
-    <Button
-        android:id="@+id/startButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="180dp"
-        android:layout_marginTop="450dp"
-        android:text="Button" />
-
     <!-- This FrameLayout insets its children based on system windows using
          android:fitsSystemWindows. -->
 

@@ -100,9 +100,7 @@ public class landingPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_landing_page);
-        Button startBut = findViewById(R.id.startButton);
         mVisible = true;
-        //mControlsView = findViewById(R.id.fullscreen_content_controls);
         mContentView = findViewById(R.id.fullscreen_content);
 
 
@@ -119,7 +117,7 @@ public class landingPage extends AppCompatActivity {
         // while interacting with the UI.
         //findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
 
-        ArrayList<ArrayList<Instance>> instanceList = Utils.loadInstance(mContext);
+
 
 
         final ScheduledExecutorService worker =
@@ -131,7 +129,6 @@ public class landingPage extends AppCompatActivity {
 
 
                     Intent myIntent = new Intent(landingPage.this, MainActivity.class);
-
                     landingPage.this.startActivity(myIntent);
                 }
             };

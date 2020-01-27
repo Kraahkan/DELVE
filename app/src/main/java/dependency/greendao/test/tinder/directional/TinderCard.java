@@ -38,9 +38,11 @@ public class TinderCard {
     @View(R.id.cardTextView)
     TextView place;
 
+    @View(R.id.leftTextView)
+    TextView leftText;
 
-
-
+    @View(R.id.rightTextView)
+    TextView rightText;
 
     @SwipeView
     android.view.View mSwipeView;
@@ -52,15 +54,13 @@ public class TinderCard {
 
 
 
+
     public TinderCard(Context context, Instance instance, Point cardViewHolderSize, Callback callback) {
         mContext = context;
         instance1 = instance;
         mCardViewHolderSize = cardViewHolderSize;
         mCallback = callback;
-        Log.d("utils", "constructor"+ instance1.getTitle());
-        String text = instance1.getTitle();
 
-        Log.d("card", "constructor");
 
     }
 
@@ -68,6 +68,8 @@ public class TinderCard {
     @Resolve
     public void onResolved() {
 
+        rightText.setText(instance1.getPositiveText());
+        leftText.setText(instance1.getNegativeText());
         place.setText(instance1.getTitle());
         Glide.with(mContext).load(R.mipmap.ic_launcher)
                 .bitmapTransform(new RoundedCornersTransformation(mContext, Utils.dpToPx(7), 0,
