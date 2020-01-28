@@ -70,7 +70,7 @@ public class SoundControl {
     /**
      * Starts playing sfx.
      * soundID is an integer assigned to var after soundPool.load()
-     * loop = 0 - noLoop || loop = 1 - isLoop
+     * loop = 0 - noLoop || loop = -1 - loop forever
      * */
     public void fxPlay (int soundID, float leftVolume, float rightVolume, int priority, int loop, float rate) {
         fxSound.play(soundID, leftVolume, rightVolume, priority, loop, rate);
@@ -80,7 +80,7 @@ public class SoundControl {
      * Stops playing sfx.
      * */
     public void fxStop () {
-        fxSound.release();
+        fxSound.release()
     }
 
     /**
