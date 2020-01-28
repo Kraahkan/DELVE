@@ -80,7 +80,7 @@ public class SoundControl {
      * Stops playing sfx.
      * */
     public void fxStop () {
-        fxSound.release()
+        fxSound.release();
     }
 
     /**

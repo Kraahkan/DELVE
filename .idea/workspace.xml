@@ -11,7 +11,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04e5b7d9-0295-48ea-bc3a-e77fa52e6e26" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/SoundControl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" afterDir="false" />
@@ -19,116 +18,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_27_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_27_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_27_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_27_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cardview_v7_27_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cardview_v7_27_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_27_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_27_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_27_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_27_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_27_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_27_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_27_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_27_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_27_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_27_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_27_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_27_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_27_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_27_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_27_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_27_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_2_2_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_2_2_2_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_2_2_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_2_2_2_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_exposed_instrumentation_api_publish_0_5_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_exposed_instrumentation_api_publish_0_5_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_rules_0_5_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_rules_0_5_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_runner_0_5_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_runner_0_5_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mindorks_android_placeholderview_1_0_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mindorks_android_placeholderview_1_0_3_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jp_wasabeef_glide_transformations_2_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__jp_wasabeef_glide_transformations_2_0_2_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DELVE.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DELVE.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/ambience/campfire.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/ambience/campfire_people.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/ambience/forest_spring.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/ambience/harbour.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/ambience/home_boiling.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/ambience/industrial_boiler.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/ambience/inside_train.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/ambience/lake_waves.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/ambience/night.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/ambience/river_stream.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/ambience/stream.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/ambience/wind_creepy.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/ambience/wind_icerain.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/ambience/winter_birds.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/ambience/winter_night.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/ambience/winter_wind.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fonts/Alata/Alata-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fonts/Alata/OFL.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fonts/Amarante/Amarante-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fonts/Amarante/OFL.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fonts/Gelasio/Gelasio-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fonts/Gelasio/Gelasio-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fonts/Gelasio/Gelasio-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fonts/Gelasio/Gelasio-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fonts/Gelasio/Gelasio-MediumItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fonts/Gelasio/Gelasio-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fonts/Gelasio/Gelasio-SemiBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fonts/Gelasio/Gelasio-SemiBoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fonts/Gelasio/OFL.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fonts/IM_Fell_Great_Primer_SC/IMFellGreatPrimerSC-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fonts/IM_Fell_Great_Primer_SC/OFL.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fonts/Ibarra_Real_Nova/IbarraRealNova-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fonts/Ibarra_Real_Nova/IbarraRealNova-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fonts/Ibarra_Real_Nova/IbarraRealNova-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fonts/Ibarra_Real_Nova/IbarraRealNova-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fonts/Ibarra_Real_Nova/IbarraRealNova-SemiBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fonts/Ibarra_Real_Nova/IbarraRealNova-SemiBoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fonts/Ibarra_Real_Nova/OFL.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fonts/PT_Serif/OFL.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fonts/PT_Serif/PTSerif-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fonts/PT_Serif/PTSerif-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fonts/PT_Serif/PTSerif-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fonts/PT_Serif/PTSerif-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fx/chest.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fx/crows.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fx/crows2.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fx/door_open.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fx/door_open2.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fx/drawer.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fx/footsteps_gravel.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fx/footsteps_mud.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fx/footsteps_snow_crunchy.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fx/inventory.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fx/loot.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fx/mining.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fx/move_inside.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fx/torch.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fx/train_close.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/fx/water_drop.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/music/LANDR-along_the_river-Low-Warm.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/music/LANDR-expedition-Low-Warm.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/music/LANDR-into_the_snow-Low-Warm.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/music/LANDR-sting-Low-Warm.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/music/LANDR-title-Low-Warm.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/music/LANDR-train_ride2-Low-Warm.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/music/LANDR-vacant_city-Low-Warm.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/music/LANDR-wildlife-Low-Warm.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/story/story.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/ui/click1.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/ui/click2.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/ui/click3.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/ui/notification1.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/ui/notification2.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/ui/notification3.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/ui/short1.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/ui/short2.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/ui/short3.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/ui/theme1.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/ui/theme2.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/ui/theme3.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/SoundControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/SoundControl.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -160,19 +50,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2055">
-              <caret line="157" column="1" selection-start-line="157" selection-start-column="1" selection-end-line="157" selection-end-column="1" />
+            <state relative-caret-position="720">
+              <caret line="66" column="63" selection-start-line="66" selection-start-column="63" selection-end-line="66" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/SoundControl.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/SoundControl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="51" column="79" selection-start-line="51" selection-start-column="79" selection-end-line="51" selection-end-column="79" />
+            <state relative-caret-position="210">
+              <caret line="82" column="26" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#3342#3343#0" expanded="true" />
+                <element signature="e#3374#3375#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -204,16 +95,16 @@
         <option value="$PROJECT_DIR$/app/src/main/assets/instance.json" />
         <option value="$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/TinderCard.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/SoundControl.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/SoundControl.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/SoundControl.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="2160" />
+  <component name="ProjectFrameBounds" extendedState="5">
+    <option name="x" value="686" />
     <option name="y" value="25" />
-    <option name="width" value="3154" />
-    <option name="height" value="2133" />
+    <option name="width" value="1474" />
+    <option name="height" value="1415" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -227,49 +118,6 @@
             <path>
               <item name="DELVE" type="b2602c69:ProjectViewProjectNode" />
               <item name="DELVE" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="DELVE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DELVE" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="DELVE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DELVE" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DELVE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DELVE" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DELVE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DELVE" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DELVE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DELVE" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="directional" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DELVE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DELVE" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -402,11 +250,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2160" y="25" width="3154" height="2133" extended-state="4" />
-    <editor active="true" />
+    <frame x="686" y="25" width="1474" height="1415" extended-state="4" />
     <layout>
       <window_info id="Captures" order="0" sideWeight="0.50179857" side_tool="true" weight="0.21758135" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49820143" visible="true" weight="0.27187902" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49820143" visible="true" weight="0.19187675" />
       <window_info id="Structure" order="2" sideWeight="0.50089127" side_tool="true" weight="0.21758135" />
       <window_info id="Favorites" order="3" sideWeight="0.50089127" side_tool="true" weight="0.21758135" />
       <window_info id="Build Variants" order="4" sideWeight="0.50089765" side_tool="true" weight="0.21758135" />
@@ -415,13 +262,13 @@
       <window_info id="Capture Tool" order="7" />
       <window_info id="Resources Explorer" order="8" />
       <window_info anchor="bottom" id="Run" order="0" weight="0.3297491" />
-      <window_info anchor="bottom" x="101" y="378" width="2059" height="281" id="Logcat" order="1" sideWeight="0.5016087" side_tool="true" visible="true" weight="0.28393215" />
+      <window_info anchor="bottom" x="101" y="378" width="2059" height="281" id="Logcat" order="1" sideWeight="0.5042017" side_tool="true" visible="true" weight="0.2830482" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32984033" />
       <window_info anchor="bottom" id="Debug" order="3" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32934132" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5002428" side_tool="true" weight="0.28673837" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.32984033" />
-      <window_info active="true" anchor="bottom" id="Build" order="7" sideWeight="0.49839124" visible="true" weight="0.28393215" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49579832" visible="true" weight="0.2830482" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.3297491" />
       <window_info anchor="bottom" id="Android Profiler" order="9" show_stripe_button="false" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" weight="0.32977173" />
@@ -448,8 +295,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/tinder_card_view.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -468,23 +315,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2055">
-          <caret line="157" column="1" selection-start-line="157" selection-start-column="1" selection-end-line="157" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/SoundControl.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/SoundControl.java" />
+    <entry file="file://$PROJECT_DIR$/local.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="79" selection-start-line="51" selection-start-column="79" selection-end-line="51" selection-end-column="79" />
+        <state relative-caret-position="720">
+          <caret line="66" column="63" selection-start-line="66" selection-start-column="63" selection-end-line="66" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/SoundControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="82" column="26" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#3342#3343#0" expanded="true" />
+            <element signature="e#3374#3375#0" expanded="true" />
           </folding>
         </state>
       </provider>
