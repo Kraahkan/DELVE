@@ -29,9 +29,8 @@ public class Utils {
 
     public static ArrayList<ArrayList<Instance>> loadInstance(Context context) {
         try {
-            int first;
-            int second;
-            int totalCount=1, j;
+
+            int totalCount=0, j, first;
             GsonBuilder builder = new GsonBuilder();
             Gson gson = builder.create();
 
@@ -41,14 +40,13 @@ public class Utils {
             ArrayList<ArrayList<Instance>> instanceListOuter = new ArrayList<ArrayList<Instance>>();
 
             Instance instance = gson.fromJson(array.getString(totalCount), Instance.class);
-            String instID = instance.getInstanceID();
-            first = Integer.parseInt(instID.substring(0,1));
-            j = first;
-
-
-            Log.d("utils", "totalCount "+totalCount+"  array.length() "+ array.length());
             instanceListInner.add(instance);
 
+            String instID = instance.getInstanceID();
+            first = Integer.parseInt(instID.substring(0,1));
+
+            totalCount++;
+            j = first;
 
             for (int i = 0; totalCount < array.length(); i++) {
 
@@ -56,7 +54,6 @@ public class Utils {
 
                     instance = gson.fromJson(array.getString(totalCount), Instance.class);
                     totalCount++;
-
                     instID = instance.getInstanceID();
                     first = Integer.parseInt(instID.substring(0,1));
 
@@ -65,9 +62,8 @@ public class Utils {
                             instanceListInner.add(instance);
                             instanceListOuter.add(instanceListInner);
                             instanceListInner= new ArrayList<Instance>();
-                            Log.d("utils", "first " +totalCount);
-                        }
 
+                        }
                     instanceListInner.add(instance);
                     }
             }

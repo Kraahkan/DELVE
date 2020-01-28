@@ -72,12 +72,16 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
 
         ArrayList<ArrayList<Instance>> instanceArrayListOuter = Utils.loadInstance(mContext);
 
-        final Instance instance =new Instance();
-        //Instance instance = new Instance();
 
+        final Instance instance = instanceArrayListOuter.get(0).get(0);
         mSwipeView.addView(new TinderCard(mContext, instance, cardViewHolderSize, this));
-        mSwipeView.addView(new TinderCard(mContext, instance, cardViewHolderSize, this));
-        mSwipeView.addView(new TinderCard(mContext, instance, cardViewHolderSize, this));
+        storyText.setText(instance.getStoryText());
+        final Instance instance1 = instanceArrayListOuter.get(0).get(1);
+
+        mSwipeView.addView(new TinderCard(mContext, instance1, cardViewHolderSize, this));
+        final Instance instance2 = instanceArrayListOuter.get(0).get(2);
+        mSwipeView.addView(new TinderCard(mContext, instance2, cardViewHolderSize, this));
+
 
         findViewById(R.id.rejectBtn).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -103,13 +107,13 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
             @Override
             public void onItemRemoved(int count) {
                 vitalityCount++;
-                storyText.setText(instance.getStoryText());
+                storyText.setText(instance1.getStoryText());
                 if(vitalityCount%3==0){
                     progBar.setProgress(progBar.getProgress()+5);
                 }
                 Instance instance = new Instance();
                 mSwipeView.addView(new TinderCard(mContext, instance, cardViewHolderSize, MainActivity.this));
-            
+
             }
         });
 
