@@ -9,6 +9,7 @@ import android.view.DragEvent;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -33,7 +34,9 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
         progBar= findViewById(R.id.progressBar);
@@ -41,8 +44,7 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
         mContext = getApplicationContext();
         storyText = findViewById(R.id.storyTextView);
 
-
-
+        
 
         int bottomMargin = Utils.dpToPx(160);
         Point windowSize = Utils.getDisplaySize(getWindowManager());
@@ -118,6 +120,10 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
         });
 
 
+    }
+
+    private void makeSnow() {
+        Particles.emitParticles((ViewGroup)findViewById(R.id.parentFrameLayout).getParent());
     }
 
     @Override
