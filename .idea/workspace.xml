@@ -13,6 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="04e5b7d9-0295-48ea-bc3a-e77fa52e6e26" name="Default Changelist" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" afterDir="false" />
@@ -23,9 +24,20 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/tinder_swipe_in_msg_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tinder_swipe_in_msg_view.xml" afterDir="false" />
 =======
+=======
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+>>>>>>> master
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+>>>>>>> master
+=======
 >>>>>>> master
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -98,6 +110,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -109,11 +122,26 @@
 >>>>>>> master
             </state>
           </provider>
+=======
+        <entry file="file://$PROJECT_DIR$/settings.gradle">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/SoundControl.java">
+        <entry file="file://$PROJECT_DIR$/local.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gradle.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+>>>>>>> master
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="389">
               <caret line="70" column="35" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="35" />
@@ -138,11 +166,16 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+>>>>>>> master
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/tinder_swipe_in_msg_view.xml">
           <provider editor-type-id="text-editor" />
           <provider selected="true" editor-type-id="android-designer2" />
@@ -167,28 +200,45 @@
           </provider>
 =======
         <entry file="file://$PROJECT_DIR$/local.properties">
+=======
+        <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+>>>>>>> master
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tinder-swipe-v2.iml">
+        <entry file="file://$PROJECT_DIR$/app/proguard-rules.pro">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/settings.gradle">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor" />
 >>>>>>> master
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gradle.properties">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/landingPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="71" column="11" selection-start-line="71" selection-start-column="11" selection-end-line="71" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/TinderCard.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="71" column="55" selection-start-line="71" selection-start-column="55" selection-end-line="71" selection-end-column="55" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/Player.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="225">
               <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
@@ -204,6 +254,18 @@
 =======
             <state relative-caret-position="119">
               <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+>>>>>>> master
+=======
+            <state relative-caret-position="548">
+              <caret line="53" column="29" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1010#1011#0" expanded="true" />
+                <element signature="e#1081#1082#0" expanded="true" />
+                <element signature="e#1346#1347#0" expanded="true" />
+                <element signature="e#1525#1526#0" expanded="true" />
+                <element signature="e#1561#1562#0" expanded="true" />
+              </folding>
 >>>>>>> master
             </state>
           </provider>
@@ -253,6 +315,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/SoundControl.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/SoundControl.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/Player.java" />
       </list>
     </option>
   </component>
@@ -264,7 +327,7 @@
 >>>>>>> master
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -282,6 +345,24 @@
             </path>
             <path>
               <item name="DELVE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DELVE" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="DELVE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DELVE" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DELVE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DELVE" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DELVE" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -292,6 +373,47 @@
       <pane id="Scope" />
 =======
       <pane id="PackagesPane" />
+<<<<<<< HEAD
+>>>>>>> master
+=======
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DELVE" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="DELVE" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="DELVE" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="directional" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DELVE" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="directional" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DELVE" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="directional" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DELVE" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
 >>>>>>> master
     </panes>
   </component>
@@ -301,7 +423,7 @@
     <property name="device.picker.selection" value="Nexus_5X_API_28_x86" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -410,6 +532,7 @@
   </component>
   <component name="ToolWindowManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <frame x="184" y="45" width="2101" height="929" extended-state="0" />
     <editor active="true" />
     <layout>
@@ -421,6 +544,13 @@
       <window_info id="Captures" order="0" sideWeight="0.50179857" side_tool="true" weight="0.21758135" />
       <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49820143" visible="true" weight="0.1652452" />
 >>>>>>> master
+=======
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Captures" order="0" sideWeight="0.50179857" side_tool="true" weight="0.21758135" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49820143" visible="true" weight="0.16684435" />
+>>>>>>> master
       <window_info id="Structure" order="2" sideWeight="0.50089127" side_tool="true" weight="0.21758135" />
       <window_info id="Favorites" order="3" sideWeight="0.50089127" side_tool="true" weight="0.21758135" />
       <window_info id="Build Variants" order="4" sideWeight="0.50089765" side_tool="true" weight="0.21758135" />
@@ -430,10 +560,14 @@
       <window_info id="Resources Explorer" order="8" />
       <window_info anchor="bottom" id="Run" order="0" weight="0.3297491" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info active="true" anchor="bottom" x="101" y="378" width="2059" height="281" id="Logcat" order="1" sideWeight="0.7440505" side_tool="true" visible="true" weight="0.29032257" />
       <window_info anchor="bottom" id="TODO" order="2" />
 =======
       <window_info anchor="bottom" x="101" y="378" width="2059" height="281" id="Logcat" order="1" sideWeight="0.50490195" side_tool="true" visible="true" weight="0.2830482" />
+=======
+      <window_info anchor="bottom" x="101" y="378" width="2059" height="281" id="Logcat" order="1" sideWeight="0.5053305" side_tool="true" visible="true" weight="0.29577464" />
+>>>>>>> master
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32984033" />
 >>>>>>> master
       <window_info anchor="bottom" id="Debug" order="3" />
@@ -446,9 +580,13 @@
       <window_info anchor="bottom" id="Android Profiler" order="9" />
 =======
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.32984033" />
-      <window_info active="true" anchor="bottom" id="Build" order="7" sideWeight="0.49509802" visible="true" weight="0.29577464" />
+      <window_info active="true" anchor="bottom" id="Build" order="7" sideWeight="0.4946695" visible="true" weight="0.29577464" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.3297491" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Android Profiler" order="9" show_stripe_button="false" />
+>>>>>>> master
+=======
+      <window_info anchor="bottom" id="Android Profiler" order="9" />
 >>>>>>> master
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" weight="0.32977173" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -459,6 +597,7 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider editor-type-id="text-editor" />
@@ -491,6 +630,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> master
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/tinder_card_view.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor" />
@@ -571,10 +712,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/local.properties">
+    <entry file="file://$PROJECT_DIR$/tinder-swipe-v2.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tinder-swipe-v2.iml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/landingPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="71" column="11" selection-start-line="71" selection-start-column="11" selection-end-line="71" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/TinderCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="71" column="55" selection-start-line="71" selection-start-column="55" selection-end-line="71" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/proguard-rules.pro">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/settings.gradle">
@@ -583,10 +751,26 @@
     <entry file="file://$PROJECT_DIR$/gradle.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/local.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/Player.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="119">
           <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+>>>>>>> master
+=======
+        <state relative-caret-position="548">
+          <caret line="53" column="29" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1081#1082#0" expanded="true" />
+            <element signature="e#1346#1347#0" expanded="true" />
+            <element signature="e#1525#1526#0" expanded="true" />
+            <element signature="e#1561#1562#0" expanded="true" />
+          </folding>
 >>>>>>> master
         </state>
       </provider>
