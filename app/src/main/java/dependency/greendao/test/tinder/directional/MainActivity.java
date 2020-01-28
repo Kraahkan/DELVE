@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
                 }
                 Instance instance = new Instance();
                 mSwipeView.addView(new TinderCard(mContext, instance, cardViewHolderSize, MainActivity.this));
-
+            
             }
         });
 

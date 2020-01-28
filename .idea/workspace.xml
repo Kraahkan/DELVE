@@ -20,13 +20,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/assets/instance.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/instance.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/TinderCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/TinderCard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/landingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/landingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_landing_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_landing_page.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/tinder_swipe_in_msg_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tinder_swipe_in_msg_view.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/tinder_swipe_out_msg_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tinder_swipe_out_msg_view.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,29 +52,29 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="13" />
+          <entry key="java" value="14" />
           <entry key="json" value="4" />
           <entry key="xml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="13" />
+          <entry key="JAVA" value="14" />
           <entry key="JSON" value="4" />
           <entry key="XML" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="952" />
-          <entry key="json" value="52" />
+          <entry key="java" value="1229" />
+          <entry key="json" value="72" />
           <entry key="txt" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="952" />
-          <entry key="JSON" value="52" />
+          <entry key="JAVA" value="1229" />
+          <entry key="JSON" value="72" />
           <entry key="PLAIN_TEXT" value="40" />
         </counts>
       </usages-collector>
@@ -91,20 +85,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="113" column="11" lean-forward="true" selection-start-line="113" selection-start-column="11" selection-end-line="113" selection-end-column="11" />
+            <state relative-caret-position="252">
+              <caret line="72" column="50" selection-start-line="72" selection-start-column="50" selection-end-line="72" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="55" column="30" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
+            <state relative-caret-position="394">
+              <caret line="69" column="24" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -115,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/landingPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1320">
-              <caret line="119" selection-start-line="119" selection-end-line="119" />
+            <state>
+              <caret column="16" selection-start-column="16" selection-end-column="16" />
               <folding>
                 <element signature="e#2812#2910#0" expanded="true" />
                 <element signature="e#2909#2910#0" expanded="true" />
@@ -128,8 +122,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/assets/instance.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+            <state relative-caret-position="-189">
+              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -2419,16 +2413,16 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_landing_page.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/landingPage.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/Utils.java" />
         <option value="$PROJECT_DIR$/app/src/main/assets/instance.json" />
+        <option value="$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/Utils.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="9" />
-    <option name="y" value="23" />
-    <option name="width" value="1424" />
-    <option name="height" value="804" />
+    <option name="x" value="184" />
+    <option name="y" value="45" />
+    <option name="width" value="2101" />
+    <option name="height" value="929" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -2661,11 +2655,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="9" y="23" width="1424" height="804" extended-state="0" />
+    <frame x="184" y="45" width="2101" height="929" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" sideWeight="0.50179857" side_tool="true" weight="0.21758135" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49820143" visible="true" weight="0.32416788" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49820143" visible="true" weight="0.21758135" />
       <window_info id="Structure" order="2" sideWeight="0.50089127" side_tool="true" weight="0.21758135" />
       <window_info id="Favorites" order="3" sideWeight="0.50089127" side_tool="true" weight="0.21758135" />
       <window_info id="Build Variants" order="4" sideWeight="0.50089765" side_tool="true" weight="0.21758135" />
@@ -2673,13 +2667,13 @@
       <window_info id="Designer" order="6" />
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Run" order="0" weight="0.3297491" />
-      <window_info active="true" anchor="bottom" x="101" y="378" width="2059" height="281" id="Logcat" order="1" sideWeight="0.74457306" side_tool="true" visible="true" weight="0.28651685" />
+      <window_info anchor="bottom" x="101" y="378" width="2059" height="281" id="Logcat" order="1" sideWeight="0.7440505" side_tool="true" visible="true" weight="0.29032257" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.3297491" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5002428" side_tool="true" weight="0.28673837" />
       <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.2554269" visible="true" weight="0.28651685" />
+      <window_info active="true" anchor="bottom" id="Build" order="7" sideWeight="0.2559495" visible="true" weight="0.29032257" />
       <window_info anchor="bottom" id="Find" order="8" sideWeight="0.4992764" weight="0.38764045" />
       <window_info anchor="bottom" id="Android Profiler" order="9" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" weight="0.32977173" />
@@ -2691,18 +2685,6 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/TinderCard.java</url>
-          <line>74</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
@@ -2721,24 +2703,14 @@
       <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/TinderCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-232">
-          <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/tinder_swipe_in_msg_view.xml">
       <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/Utils.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/TinderCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="55" column="30" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="166">
+          <caret line="70" column="55" selection-start-line="70" selection-start-column="55" selection-end-line="70" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -2751,8 +2723,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/landingPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="119" selection-start-line="119" selection-end-line="119" />
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
           <folding>
             <element signature="e#2812#2910#0" expanded="true" />
             <element signature="e#2909#2910#0" expanded="true" />
@@ -2762,15 +2734,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/assets/instance.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+        <state relative-caret-position="-189">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="113" column="11" lean-forward="true" selection-start-line="113" selection-start-column="11" selection-end-line="113" selection-end-column="11" />
+        <state relative-caret-position="252">
+          <caret line="72" column="50" selection-start-line="72" selection-start-column="50" selection-end-line="72" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/dependency/greendao/test/tinder/directional/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="69" column="24" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
