@@ -1,14 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.jinatonic.confetti:confetti:1.1.2@aar">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/0546c9acd27240073b078303ff4dad30/confetti-1.1.2/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/0546c9acd27240073b078303ff4dad30/confetti-1.1.2/res" />
+      <root url="jar://C:/Android-Gradle/.gradle/caches/transforms-2/files-2.1/c88323fa056fb5a45990547bd3203164/jars/classes.jar!/" />
+      <root url="file://C:/Android-Gradle/.gradle/caches/transforms-2/files-2.1/c88323fa056fb5a45990547bd3203164/res" />
     </CLASSES>
-    <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.github.jinatonic.confetti/confetti/1.1.2/e4541dd11fea50bb6788d41ff0f2c131ac8f72ff/confetti-1.1.2-javadoc.jar!/" />
-    </JAVADOC>
+    <JAVADOC />
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.github.jinatonic.confetti/confetti/1.1.2/b67562ac1ab960e1538ca984e5c1f0381312b1f3/confetti-1.1.2-sources.jar!/" />
+      <root url="jar://C:/Android-Gradle/.gradle/caches/modules-2/files-2.1/com.github.jinatonic.confetti/confetti/1.1.2/b67562ac1ab960e1538ca984e5c1f0381312b1f3/confetti-1.1.2-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

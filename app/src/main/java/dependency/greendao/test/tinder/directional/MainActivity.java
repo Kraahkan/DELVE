@@ -37,15 +37,15 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
 
         super.onCreate(savedInstanceState);
 
+
+
         setContentView(R.layout.activity_main);
 
         progBar= findViewById(R.id.progressBar);
         mSwipeView =  findViewById(R.id.swipeView);
         mContext = getApplicationContext();
         storyText = findViewById(R.id.storyTextView);
-
         
-
         int bottomMargin = Utils.dpToPx(160);
         Point windowSize = Utils.getDisplaySize(getWindowManager());
         mSwipeView.getBuilder()
