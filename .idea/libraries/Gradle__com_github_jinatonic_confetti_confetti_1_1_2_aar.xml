@@ -1,8 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.jinatonic.confetti:confetti:1.1.2@aar">
     <CLASSES>
+<<<<<<< HEAD
       <root url="jar://C:/Android-Gradle/.gradle/caches/transforms-2/files-2.1/c88323fa056fb5a45990547bd3203164/jars/classes.jar!/" />
       <root url="file://C:/Android-Gradle/.gradle/caches/transforms-2/files-2.1/c88323fa056fb5a45990547bd3203164/res" />
+=======
+      <root url="jar://C:/Android-Gradle/.gradle/caches/transforms-2/files-2.1/43402c3580cec7c8498cef2f9328bcc6/jars/classes.jar!/" />
+      <root url="file://C:/Android-Gradle/.gradle/caches/transforms-2/files-2.1/43402c3580cec7c8498cef2f9328bcc6/res" />
+>>>>>>> master
     </CLASSES>
     <JAVADOC />
     <SOURCES>

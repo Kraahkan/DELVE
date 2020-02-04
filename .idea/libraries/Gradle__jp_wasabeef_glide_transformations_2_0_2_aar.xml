@@ -1,8 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: jp.wasabeef:glide-transformations:2.0.2@aar">
     <CLASSES>
+<<<<<<< HEAD
       <root url="file://C:/Android-Gradle/.gradle/caches/transforms-2/files-2.1/0af6a06e779292dfb009b7a0df676354/res" />
       <root url="jar://C:/Android-Gradle/.gradle/caches/transforms-2/files-2.1/0af6a06e779292dfb009b7a0df676354/jars/classes.jar!/" />
+=======
+      <root url="jar://C:/Android-Gradle/.gradle/caches/transforms-2/files-2.1/0a22f61c6c23b9843ebbddd0113e2aaf/jars/classes.jar!/" />
+      <root url="file://C:/Android-Gradle/.gradle/caches/transforms-2/files-2.1/0a22f61c6c23b9843ebbddd0113e2aaf/res" />
+>>>>>>> master
     </CLASSES>
     <JAVADOC />
     <SOURCES>
