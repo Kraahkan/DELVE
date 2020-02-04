@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
         mSwipeView =  findViewById(R.id.swipeView);
         mContext = getApplicationContext();
         storyText = findViewById(R.id.storyTextView);
-        
+
         int bottomMargin = Utils.dpToPx(160);
         Point windowSize = Utils.getDisplaySize(getWindowManager());
         mSwipeView.getBuilder()
@@ -81,8 +81,7 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
         final Instance instance1 = instanceArrayListOuter.get(0).get(1);
 
         mSwipeView.addView(new TinderCard(mContext, instance1, cardViewHolderSize, this));
-        final Instance instance2 = instanceArrayListOuter.get(0).get(2);
-        mSwipeView.addView(new TinderCard(mContext, instance2, cardViewHolderSize, this));
+
 
 
         findViewById(R.id.rejectBtn).setOnClickListener(new View.OnClickListener() {

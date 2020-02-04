@@ -69,6 +69,7 @@ public class Utils {
             }
 
             String ID;
+            /*
              ID = instanceListOuter.get(0).get(0).getInstanceID();
             Log.d("utils", "first "+ID);
              ID = instanceListOuter.get(0).get(1).getInstanceID();
@@ -87,12 +88,12 @@ public class Utils {
             Log.d("utils", "eigth "+ID);
              ID = instanceListOuter.get(2).get(1).getInstanceID();
             Log.d("utils", "ninth "+ID);
-
-            Log.d("utils", "return");
+*/
+            Log.d("utils", "Successful parse of story!");
             return instanceListOuter;
         } catch (Exception e) {
             e.printStackTrace();
-            Log.d("utils", "return null");
+            Log.d("utils", "Error in parsing story!");
             return null;
         }
     }
