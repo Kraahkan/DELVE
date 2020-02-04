@@ -1,0 +1,27 @@
+Card Types:
+Choice Cards: +, *
+Text Cards: -, ~
+
+Tags:
+Title: |
+Art: $
+Sound Effect: !
+Ambience: @ 
+Music: # 
+Chapter: %
+
+%The Fall @blackness.mp3 #wildlife.mp3
+
++In your slumber, a pain like fire sears your head. +Awaken to the world -Stay in your slumber !fire.mp3 $darkness.png
+    +You heave eyes open. A snowstorm rages before you. *Listen to the wind ~Move into the cold !awaken.mp3 @blizzard.mp3 $snowstorm.png
+    -*You descend further into blackness for a moment, but the cold jolts you awake. !darkness.mp3 !sting.mp3 $
+
+~*The wind howls against you, and your face burns. !footsteps.mp3
+*Unseen, beyond the wall of ice, a metallic roar bellows  -Give into the cold ~Move into the storm !train.mp3 @blizzard.mp3
+    -%The blizzard overtakes you, and a dream carries you to before. !death.mp3 @sleep.mp3
+    ~%For a moment, your hear many voices. Then, the voices fade. %Give into the cold; -Move further into the blizzard 
+
+%The East Vessel $train.png @train.
+
+-*Unknown | "A drink sir?" !
+*Steward | "At last, you awake!" -"Where's my drink?"
