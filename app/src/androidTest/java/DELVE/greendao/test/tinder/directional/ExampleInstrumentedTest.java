@@ -1,4 +1,4 @@
-package dependency.greendao.test.tinder.directional;
+package DELVE.greendao.test.tinder.directional;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("dependency.greendao.test.tinder.directional", appContext.getPackageName());
+        assertEquals("DELVE.greendao.test.tinder.directional", appContext.getPackageName());
     }
 }

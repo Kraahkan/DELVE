@@ -1,8 +1,7 @@
-package dependency.greendao.test.tinder.directional;
+package DELVE;
 
 import android.content.Context;
 import android.content.res.Resources;
-import android.os.Debug;
 import android.util.Log;
 
 import java.util.ArrayList;

@@ -1,12 +1,9 @@
-package dependency.greendao.test.tinder.directional;
+package DELVE;
 
 import android.content.Context;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
-import android.view.View;
-
-import com.bumptech.glide.load.engine.Resource;
 
 public class SoundControl {
 
