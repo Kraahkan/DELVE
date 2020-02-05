@@ -1,4 +1,4 @@
-package dependency.greendao.test.tinder.directional;
+package DELVE;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -9,11 +9,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Button;
 
-import java.util.ArrayList;
-import java.util.Timer;
-import java.util.TimerTask;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
