@@ -1,11 +1,9 @@
-package dependency.greendao.test.tinder.directional;
+package DELVE;
 
 import android.content.Context;
 import android.graphics.Point;
 import android.util.Log;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,8 +19,6 @@ import com.mindorks.placeholderview.annotations.swipe.SwipeOutDirectional;
 import com.mindorks.placeholderview.annotations.swipe.SwipeTouch;
 import com.mindorks.placeholderview.annotations.swipe.SwipeView;
 import com.mindorks.placeholderview.annotations.swipe.SwipingDirection;
-
-import org.w3c.dom.Text;
 
 import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 

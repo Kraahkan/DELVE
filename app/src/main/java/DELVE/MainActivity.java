@@ -1,19 +1,14 @@
-package dependency.greendao.test.tinder.directional;
+package DELVE;
 
 import android.content.Context;
 import android.graphics.Point;
 import android.os.Bundle;
-import android.print.PrintAttributes;
 import android.support.v7.app.AppCompatActivity;
-import android.view.DragEvent;
 import android.view.Gravity;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.mindorks.placeholderview.SwipeDecor;
 import com.mindorks.placeholderview.SwipeDirectionalView;

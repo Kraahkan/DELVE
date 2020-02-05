@@ -1,4 +1,4 @@
-package dependency.greendao.test.tinder.directional;
+package DELVE;
 
 import android.graphics.Color;
 import android.view.ViewGroup;
