@@ -3,9 +3,11 @@ package dependency.greendao.test.tinder.directional;
 import android.content.Context;
 import android.content.res.Resources;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Debug;
 import android.util.Log;
 
+import java.io.File;
 import java.util.ArrayList;
 
 public class SoundController {
@@ -35,7 +37,11 @@ public class SoundController {
 
    }
 
-   private void playOneShot(String soundName, int startTime, int duration) {
+   public void playOneShot(String soundName, int startTime, int duration) {
+
+        Uri uri=Uri.parse("android.resource://"+activityContext.getPackageName()+"/raw/" + soundName);
+        MediaPlayer mp = MediaPlayer.create(activityContext, uri);
+        mp.start();
 
    }
 

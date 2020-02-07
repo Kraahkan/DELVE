@@ -37,8 +37,6 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
 
         super.onCreate(savedInstanceState);
 
-
-
         setContentView(R.layout.activity_main);
 
         progBar= findViewById(R.id.progressBar);
@@ -118,7 +116,15 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
             }
         });
 
+        playSounds();
 
+
+    }
+
+    private void playSounds() {
+        SoundController soundController = new SoundController();
+        soundController.initialize(this);
+        soundController.playOneShot("fx_chest",0,0);
     }
 
     private void makeSnow() {
