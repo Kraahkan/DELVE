@@ -23,8 +23,8 @@ public class MainMenu extends AppCompatActivity {
 
         Button buttonStart = (Button) findViewById(R.id.buttonStart);
 
-        animationDrawable.setEnterFadeDuration(0);
-        animationDrawable.setExitFadeDuration(1000);
+        animationDrawable.setEnterFadeDuration(2000);
+        animationDrawable.setExitFadeDuration(3000);
         animationDrawable.start();
 
         buttonStart.setOnClickListener(new View.OnClickListener() {
