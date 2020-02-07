@@ -21,7 +21,7 @@ public class SoundController {
 
     float volume = 0;
 
-    private final static int MAX_VOLUME = 100;
+    private final static int MAX_VOLUME = 180;
 
     public void initialize(Context context) {
 
@@ -73,7 +73,7 @@ public class SoundController {
         final MediaPlayer mp = MediaPlayer.create(activityContext, uri);
        // mp.start();
 
-        final int FADE_DURATION = 30000; //The duration of the fade
+        final int FADE_DURATION = 3000; //The duration of the fade, ex. 30000 is a proper fade
         //The amount of time between volume changes. The smaller this is, the smoother the fade
         final int FADE_INTERVAL = 250;
         final int MAX_VOLUME = 1; //The volume will increase from 0 to 1

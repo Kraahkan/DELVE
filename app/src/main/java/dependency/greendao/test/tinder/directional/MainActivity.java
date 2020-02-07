@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
         soundController.initialize(this);
        // soundController.playOneShot("fx_door_open",0 );
         //soundController.playOneShot("mus_river",0 );
-        soundController.playMusic("mus_river");
+        soundController.playMusic("mus_wildlife");
     }
 
     private void makeSnow() {
