@@ -11,7 +11,8 @@
       "negativeID": 1.3,
       "soundEffect": "darkness",
       "ambiance": "",
-      "music": ""
+      "music": "",
+      "color": "white"
     },
     {
       "instanceID": 1.2,
@@ -25,7 +26,8 @@
       "negativeID": 1.6,
       "soundEffect": "",
       "ambiance": "",
-      "music": ""
+      "music": "",
+      "color": "white"
     },
   {
     "instanceID": 1.3,
@@ -39,7 +41,8 @@
     "negativeID": 1.5,
     "soundEffect": "",
     "ambiance": "",
-    "music": ""
+    "music": "",
+    "color": "white"
   },
   {
     "instanceID": 1.4,
@@ -53,7 +56,8 @@
     "negativeID": 1.5,
     "soundEffect": "fx_footsteps_snow_crunchy",
     "ambiance": "",
-    "music": ""
+    "music": "",
+    "color": "white"
   },
   {
     "instanceID": 1.5,
@@ -67,7 +71,8 @@
     "negativeID": 1.8,
     "soundEffect": "fx_train",
     "ambiance": "",
-    "music": ""
+    "music": "",
+    "color": "white"
   },
   {
     "instanceID": 1.6,
@@ -95,7 +100,8 @@
     "negativeID": 1.8,
     "soundEffect": "fx_voices",
     "ambiance": "",
-    "music": ""
+    "music": "",
+    "color": "white"
   },
   {
     "instanceID": 1.8,
@@ -109,7 +115,8 @@
     "negativeID": 2.0,
     "soundEffect": "darkness",
     "ambiance": "",
-    "music": ""
+    "music": "",
+    "color": "white"
   }
 ]
 
