@@ -4,7 +4,7 @@
     android:id="@+id/parentFrameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
+    android:background="@drawable/gradient_list"
     android:orientation="vertical">
 
     <LinearLayout

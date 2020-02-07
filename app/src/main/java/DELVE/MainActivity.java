@@ -2,11 +2,13 @@ package DELVE;
 
 import android.content.Context;
 import android.graphics.Point;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -27,17 +29,24 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
 
     int vitalityCount=0;
 
+    GraphicsControl graphicsControl = new GraphicsControl();
+    private FrameLayout frameLayout;
+    private AnimationDrawable animationDrawable;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
 
-
-
         setContentView(R.layout.activity_main);
 
-        progBar= findViewById(R.id.progressBar);
-        mSwipeView =  findViewById(R.id.swipeView);
+        frameLayout = findViewById(R.id.parentFrameLayout);
+        animationDrawable = (AnimationDrawable) frameLayout.getBackground();
+        graphicsControl.startAnimation(animationDrawable);
+
+
+        progBar = findViewById(R.id.progressBar);
+        mSwipeView = findViewById(R.id.swipeView);
         mContext = getApplicationContext();
         storyText = findViewById(R.id.storyTextView);
         
@@ -131,25 +140,8 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
         if (hasFocus) {
-            hideSystemUI();
+            graphicsControl.hideSystemUI(frameLayout);
         }
-    }
-    //hides system tray and makes application full screen.
-    private void hideSystemUI() {
-        // Enables regular immersive mode.
-        // For "lean back" mode, remove SYSTEM_UI_FLAG_IMMERSIVE.
-        // Or for "sticky immersive," replace it with SYSTEM_UI_FLAG_IMMERSIVE_STICKY
-        View decorView = getWindow().getDecorView();
-        decorView.setSystemUiVisibility(
-                View.SYSTEM_UI_FLAG_IMMERSIVE
-                        // Set the content to appear under the system bars so that the
-                        // content doesn't resize when the system bars hide and show.
-                        | View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                        | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                        | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                        // Hide the nav bar and status bar
-                        | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                        | View.SYSTEM_UI_FLAG_FULLSCREEN);
     }
 
     // Shows the system bars by removing all the flags

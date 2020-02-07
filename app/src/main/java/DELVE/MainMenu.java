@@ -11,22 +11,15 @@ import android.widget.FrameLayout;
 
 public class MainMenu extends AppCompatActivity {
 
+    GraphicsControl graphicsControl = new GraphicsControl();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
 
-        hideSystemUI();
-
-        FrameLayout frameLayout = findViewById(R.id.layout);
-        AnimationDrawable animationDrawable = (AnimationDrawable) frameLayout.getBackground();
-
+        //Buttons
         Button buttonStart = (Button) findViewById(R.id.buttonStart);
-
-        animationDrawable.setEnterFadeDuration(2000);
-        animationDrawable.setExitFadeDuration(3000);
-        animationDrawable.start();
-
         buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -34,9 +27,15 @@ public class MainMenu extends AppCompatActivity {
                 MainMenu.this.startActivity(myIntent);
             }
         });
+
+        //For graphics
+        FrameLayout frameLayout = findViewById(R.id.layout);
+        AnimationDrawable animationDrawable = (AnimationDrawable) frameLayout.getBackground();
+        graphicsControl.hideSystemUI(getWindow().getDecorView());
+        graphicsControl.startAnimation(animationDrawable);
     }
 
-    private void hideSystemUI() {
+   /* private void hideSystemUI() {
         // Enables regular immersive mode.
         // For "lean back" mode, remove SYSTEM_UI_FLAG_IMMERSIVE.
         // Or for "sticky immersive," replace it with SYSTEM_UI_FLAG_IMMERSIVE_STICKY
@@ -51,5 +50,5 @@ public class MainMenu extends AppCompatActivity {
                         // Hide the nav bar and status bar
                         | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                         | View.SYSTEM_UI_FLAG_FULLSCREEN);
-    }
+    }*/
 }
