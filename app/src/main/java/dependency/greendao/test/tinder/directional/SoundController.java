@@ -15,6 +15,8 @@ public class SoundController {
     String oldSound = "";
     Context activityContext;
 
+    private final static int MAX_VOLUME = 100;
+
     public void initialize(Context context) {
 
         activityContext = context;
@@ -37,10 +39,18 @@ public class SoundController {
 
    }
 
-   public void playOneShot(String soundName, int startTime, int duration) {
+   public void playOneShot(String soundName, int volume) {
 
-        Uri uri=Uri.parse("android.resource://"+activityContext.getPackageName()+"/raw/" + soundName);
-        MediaPlayer mp = MediaPlayer.create(activityContext, uri);
+        // later:  int startTime, int duration,
+
+       Uri uri=Uri.parse("android.resource://"+activityContext.getPackageName()+"/raw/" + soundName);
+       MediaPlayer mp = MediaPlayer.create(activityContext, uri);
+
+       final float logVolume = (float) (1 - (Math.log(MAX_VOLUME - volume) / Math.log(MAX_VOLUME)));
+       mp.setVolume(logVolume, logVolume);
+
+
+
         mp.start();
 
    }
