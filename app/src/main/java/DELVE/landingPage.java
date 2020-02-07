@@ -124,7 +124,7 @@ public class landingPage extends AppCompatActivity {
                     // add instance objects to an array
 
 
-                    Intent myIntent = new Intent(landingPage.this, MainActivity.class);
+                    Intent myIntent = new Intent(landingPage.this, MainMenu.class);
                     landingPage.this.startActivity(myIntent);
                 }
             };

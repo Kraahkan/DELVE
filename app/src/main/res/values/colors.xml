@@ -9,4 +9,34 @@
     <color name="black_overlay">#66000000</color>
 
     <color name="textViewColor">#171d1b</color>
+
+<!-- Colors for dynamic background GH-24 -->
+    <color name="gradient_1_Start">#F2EBF0</color>
+    <color name="gradient_1_Center">#E8E2E7</color>
+    <color name="gradient_1_End">#DFD9DF</color>
+
+    <color name="gradient_2_Start">#FDFBFB</color>
+    <color name="gradient_2_Center">#F4F4F4</color>
+    <color name="gradient_2_End">#EBEDEE</color>
+
+    <color name="gradient_3_Start">#F5F7FA</color>
+    <color name="gradient_3_Center">#DDE4EE</color>
+    <color name="gradient_3_End">#C3CFE2</color>
+
+    <color name="gradient_4_Start">#EEF1F5</color>
+    <color name="gradient_4_Center">#EAEDF2</color>
+    <color name="gradient_4_End">#E6E9F0</color>
+
+    <color name="gradient_5_Start">#F0F0F0</color>
+    <color name="gradient_5_Center">#DFDEDD</color>
+    <color name="gradient_5_End">#CFCFCF</color>
+
+    <color name="gradient_6_Start">#EEEEEE</color>
+    <color name="gradient_6_Center">#E9E9E9</color>
+    <color name="gradient_6_End">#D5D5D5</color>
+
+    <color name="gradient_7_Start">#ECECEC</color>
+    <color name="gradient_7_Center">#EBEBEB</color>
+    <color name="gradient_7_End">#C5C6C7</color>
+
 </resources>
