@@ -1,8 +1,8 @@
 package DELVE;
 
 import android.graphics.drawable.AnimationDrawable;
+import android.graphics.drawable.Drawable;
 import android.view.View;
-import android.view.Window;
 
 public class GraphicsControl {
     public void hideSystemUI(View view) {
@@ -32,5 +32,26 @@ public class GraphicsControl {
         animationDrawable.setExitFadeDuration(3000);
         animationDrawable.selectDrawable(index);
         animationDrawable.start();
+    }
+
+    public int getFrame(AnimationDrawable animationDrawable) {
+        animationDrawable.stop();
+
+    // The variable that will guard the frame number
+        int frameNumber = 0;
+
+    // Get the frame of the animation
+        Drawable currentFrame, checkFrame;
+        currentFrame = animationDrawable.getCurrent();
+
+    // Checks the position of the frame
+        for (int i = 0; i < animationDrawable.getNumberOfFrames(); i++) {
+            checkFrame = animationDrawable.getFrame(i);
+            if (checkFrame == currentFrame) {
+                frameNumber = i;
+                break;
+            }
+        }
+        return frameNumber;
     }
 }

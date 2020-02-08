@@ -20,16 +20,14 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements TinderCard.Callback {
 
+    public ProgressBar progBar;
+    public TextView storyText;
+    int vitalityCount = 0;
+    GraphicsControl graphicsControl = new GraphicsControl();
     private SwipeDirectionalView mSwipeView;
     private Context mContext;
     private int mAnimationDuration = 300;
     private boolean isToUndo = false;
-    public ProgressBar progBar;
-    public TextView storyText;
-
-    int vitalityCount = 0;
-
-    GraphicsControl graphicsControl = new GraphicsControl();
     private FrameLayout frameLayout;
     private AnimationDrawable animationDrawable;
 

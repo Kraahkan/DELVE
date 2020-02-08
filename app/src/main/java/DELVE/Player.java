@@ -25,11 +25,6 @@ public class Player {
     // Abritrary limit of 10000 items
     private String[] items = new String[10000];
 
-    private enum Effect {
-        HEALTHY,
-        SICK,
-    }
-
     private void intializePlayer(Context context) {
         sharedPrefPlayer = context.getSharedPreferences("myPref", MODE_PRIVATE);
     }
@@ -52,6 +47,11 @@ public class Player {
 
     public String getPlayerName() {
         return characterName;
+    }
+
+    private enum Effect {
+        HEALTHY,
+        SICK,
     }
 
 }
