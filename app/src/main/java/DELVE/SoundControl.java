@@ -64,19 +64,20 @@ public class SoundControl {
     }
     */
 //---------------------------------------------------------------------------------------------------------------------------------
+
     /**
      * Starts playing sfx.
      * soundID is an integer assigned to var after soundPool.load()
      * loop = 0 - noLoop || loop = -1 - loop forever
-     * */
-    public void fxPlay (int soundID, float leftVolume, float rightVolume, int priority, int loop, float rate) {
+     */
+    public void fxPlay(int soundID, float leftVolume, float rightVolume, int priority, int loop, float rate) {
         fxSound.play(soundID, leftVolume, rightVolume, priority, loop, rate);
     }
 
     /**
      * Stops playing sfx.
-     * */
-    public void fxStop () {
+     */
+    public void fxStop() {
         fxSound.release();
     }
 
@@ -85,8 +86,8 @@ public class SoundControl {
      * resID == resourceID.
      * For reference how to get resID: https://stackoverflow.com/questions/7182525/android-get-r-raw-from-variable
      * View may be needed in method signature.
-     * */
-    public void ambientPlay (/*View v,*/ Context context, int resID) {
+     */
+    public void ambientPlay(/*View v,*/ Context context, int resID) {
         if (ambientPlayer == null) {
             ambientPlayer = MediaPlayer.create(context, resID);
         }
@@ -96,9 +97,9 @@ public class SoundControl {
     /**
      * Pauses ambient.
      * View may be needed in method signature.
-     * */
+     */
 
-    public void ambientPause (/*View v,*/) {
+    public void ambientPause(/*View v,*/) {
         if (ambientPlayer != null) {
             ambientPlayer.stop();
         }
@@ -107,8 +108,8 @@ public class SoundControl {
     /**
      * Stops ambient.
      * Releases MediaPlayr to save resources.
-     * */
-    public void ambientStop () {
+     */
+    public void ambientStop() {
         if (ambientPlayer != null) {
             ambientPlayer.release();
             ambientPlayer = null;

@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
     public ProgressBar progBar;
     public TextView storyText;
 
-    int vitalityCount=0;
+    int vitalityCount = 0;
 
     GraphicsControl graphicsControl = new GraphicsControl();
     private FrameLayout frameLayout;
@@ -42,14 +42,14 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
 
         frameLayout = findViewById(R.id.parentFrameLayout);
         animationDrawable = (AnimationDrawable) frameLayout.getBackground();
-        graphicsControl.startAnimation(animationDrawable);
+        graphicsControl.startAnimation(animationDrawable, 2);
 
 
         progBar = findViewById(R.id.progressBar);
         mSwipeView = findViewById(R.id.swipeView);
         mContext = getApplicationContext();
         storyText = findViewById(R.id.storyTextView);
-        
+
         int bottomMargin = Utils.dpToPx(160);
         Point windowSize = Utils.getDisplaySize(getWindowManager());
         mSwipeView.getBuilder()
@@ -61,8 +61,8 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
                 .setHeightSwipeDistFactor(10)
                 .setWidthSwipeDistFactor(5)
                 .setSwipeDecor(new SwipeDecor()
-                        .setViewWidth(windowSize.x-110)
-                        .setViewHeight(windowSize.y-250 - bottomMargin)
+                        .setViewWidth(windowSize.x - 110)
+                        .setViewHeight(windowSize.y - 250 - bottomMargin)
                         .setViewGravity(Gravity.TOP)
                         .setPaddingTop(20)
                         .setSwipeMaxChangeAngle(10)
@@ -93,20 +93,18 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
             @Override
             public void onClick(View v) {
                 mSwipeView.doSwipe(false);
-                progBar.setProgress(progBar.getProgress()+10);
+                progBar.setProgress(progBar.getProgress() + 10);
             }
         });
 
         findViewById(R.id.acceptBtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               mSwipeView.doSwipe(true);
+                mSwipeView.doSwipe(true);
 
 
             }
         });
-
-
 
 
         mSwipeView.addItemRemoveListener(new ItemRemovedListener() {
@@ -114,8 +112,8 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
             public void onItemRemoved(int count) {
                 vitalityCount++;
                 storyText.setText(instance1.getStoryText());
-                if(vitalityCount%3==0){
-                    progBar.setProgress(progBar.getProgress()+5);
+                if (vitalityCount % 3 == 0) {
+                    progBar.setProgress(progBar.getProgress() + 5);
                 }
                 Instance instance = new Instance();
                 mSwipeView.addView(new TinderCard(mContext, instance, cardViewHolderSize, MainActivity.this));
@@ -127,7 +125,7 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
     }
 
     private void makeSnow() {
-        Particles.emitParticles((ViewGroup)findViewById(R.id.parentFrameLayout).getParent());
+        Particles.emitParticles((ViewGroup) findViewById(R.id.parentFrameLayout).getParent());
     }
 
     @Override

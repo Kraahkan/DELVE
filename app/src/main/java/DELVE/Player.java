@@ -19,7 +19,7 @@ public class Player {
     private int numberOfSwipes = 0;
 
     // Support for buffs / debuffs to represent a player's status beyond vitality
-    private Effect[] playerEffects = { Effect.HEALTHY };
+    private Effect[] playerEffects = {Effect.HEALTHY};
     private int playerVitality = 7;
 
     // Abritrary limit of 10000 items

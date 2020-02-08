@@ -116,23 +116,28 @@ public class Instance {
     public void setInstanceID(String instanceID) {
         this.instanceID = instanceID;
     }
-    public String getTitle(){
+
+    public String getTitle() {
         return title;
     }
-    public void setTitle(String title)
-    {
+
+    public void setTitle(String title) {
         this.title = title;
     }
-    public String getArt(){
+
+    public String getArt() {
         return art;
     }
-    public void setArt(String art){
+
+    public void setArt(String art) {
         this.art = art;
     }
-    public String getSoundEffect(){
+
+    public String getSoundEffect() {
         return soundEffect;
     }
-    public void setSoundEffect(String soundEffect){
+
+    public void setSoundEffect(String soundEffect) {
         this.soundEffect = soundEffect;
     }
 

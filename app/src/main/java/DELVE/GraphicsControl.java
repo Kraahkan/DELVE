@@ -26,4 +26,11 @@ public class GraphicsControl {
         animationDrawable.setExitFadeDuration(3000);
         animationDrawable.start();
     }
+
+    public void startAnimation(AnimationDrawable animationDrawable, int index) {
+        animationDrawable.setEnterFadeDuration(2000);
+        animationDrawable.setExitFadeDuration(3000);
+        animationDrawable.selectDrawable(index);
+        animationDrawable.start();
+    }
 }

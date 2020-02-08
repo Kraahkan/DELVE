@@ -43,18 +43,13 @@ public class landingPage extends AppCompatActivity {
     private Context mContext;
 
     GraphicsControl graphicsControl = new GraphicsControl();
+    FrameLayout frameLayout;
+    AnimationDrawable animationDrawable;
 
     private final Runnable mHidePart2Runnable = new Runnable() {
         @SuppressLint("InlinedApi")
         @Override
         public void run() {
-            // Delayed removal of status and navigation bar
-
-            // Note that some of these constants are new as of API 16 (Jelly Bean)
-            // and API 19 (KitKat). It is safe to use them, as they are inlined
-            // at compile-time and do nothing on earlier devices.
-            FrameLayout frameLayout = findViewById(R.id.landingPageFrameLayout);
-            AnimationDrawable animationDrawable = (AnimationDrawable) frameLayout.getBackground();
             graphicsControl.startAnimation(animationDrawable);
             graphicsControl.hideSystemUI(getWindow().getDecorView());
 
@@ -99,6 +94,9 @@ public class landingPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        frameLayout = findViewById(R.id.landingPageFrameLayout);
+        animationDrawable = (AnimationDrawable) frameLayout.getBackground();
+
         setContentView(R.layout.activity_landing_page);
         mVisible = true;
         mContentView = findViewById(R.id.fullscreen_content);
@@ -118,15 +116,14 @@ public class landingPage extends AppCompatActivity {
         //findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
 
 
-
-
         final ScheduledExecutorService worker =
                 Executors.newSingleThreadScheduledExecutor();
         {
             Runnable task = new Runnable() {
                 public void run() {
-                    // add instance objects to an array
+                    //int frameNum = animationDrawable.getCurrent();
 
+                    // add instance objects to an array
 
                     Intent myIntent = new Intent(landingPage.this, MainMenu.class);
                     landingPage.this.startActivity(myIntent);
