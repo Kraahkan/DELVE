@@ -1,4 +1,4 @@
-package dependency.greendao.test.tinder.directional;
+package DELVE;
 
 import android.content.Context;
 import android.content.SharedPreferences;

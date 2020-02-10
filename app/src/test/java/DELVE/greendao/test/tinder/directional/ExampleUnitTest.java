@@ -1,4 +1,4 @@
-package dependency.greendao.test.tinder.directional;
+package DELVE.greendao.test.tinder.directional;
 
 import org.junit.Test;
 

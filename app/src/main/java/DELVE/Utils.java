@@ -1,4 +1,4 @@
-package dependency.greendao.test.tinder.directional;
+package DELVE;
 
 import android.content.Context;
 import android.content.res.AssetManager;
@@ -9,7 +9,6 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Display;
 import android.view.WindowManager;
-import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

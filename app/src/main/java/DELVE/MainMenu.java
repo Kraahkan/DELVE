@@ -1,4 +1,4 @@
-package dependency.greendao.test.tinder.directional;
+package DELVE;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
