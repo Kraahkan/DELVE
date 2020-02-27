@@ -26,21 +26,21 @@ public class SoundController {
         }
 
         id.add(context.getResources().getIdentifier("fx_chest", "raw", context.getPackageName())); // don't include file type
-        Log.d("resources",id.get(0).toString());
+        Log.d("resources", id.get(0).toString());
 
 
-   }
+    }
 
-   private void fadeIn() {
+    private void fadeIn() {
 
-   }
+    }
 
-   private void fadeOut() {
+    private void fadeOut() {
 
-   }
+    }
 
-   public void crossFade() {
+    public void crossFade() {
         fadeIn();
         fadeOut();
-   }
+    }
 }

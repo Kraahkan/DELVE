@@ -2,11 +2,13 @@ package DELVE;
 
 import android.content.Context;
 import android.graphics.Point;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -18,29 +20,34 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements TinderCard.Callback {
 
+    public ProgressBar progBar;
+    public TextView storyText;
+    int vitalityCount = 0;
+    GraphicsControl graphicsControl = new GraphicsControl();
     private SwipeDirectionalView mSwipeView;
     private Context mContext;
     private int mAnimationDuration = 300;
     private boolean isToUndo = false;
-    public ProgressBar progBar;
-    public TextView storyText;
-
-    int vitalityCount=0;
+    private FrameLayout frameLayout;
+    private AnimationDrawable animationDrawable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
 
-
-
         setContentView(R.layout.activity_main);
 
-        progBar= findViewById(R.id.progressBar);
-        mSwipeView =  findViewById(R.id.swipeView);
+        frameLayout = findViewById(R.id.parentFrameLayout);
+        animationDrawable = (AnimationDrawable) frameLayout.getBackground();
+        graphicsControl.startAnimation(animationDrawable, 2);
+
+
+        progBar = findViewById(R.id.progressBar);
+        mSwipeView = findViewById(R.id.swipeView);
         mContext = getApplicationContext();
         storyText = findViewById(R.id.storyTextView);
-        
+
         int bottomMargin = Utils.dpToPx(160);
         Point windowSize = Utils.getDisplaySize(getWindowManager());
         mSwipeView.getBuilder()
@@ -52,8 +59,8 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
                 .setHeightSwipeDistFactor(10)
                 .setWidthSwipeDistFactor(5)
                 .setSwipeDecor(new SwipeDecor()
-                        .setViewWidth(windowSize.x-110)
-                        .setViewHeight(windowSize.y-250 - bottomMargin)
+                        .setViewWidth(windowSize.x - 110)
+                        .setViewHeight(windowSize.y - 250 - bottomMargin)
                         .setViewGravity(Gravity.TOP)
                         .setPaddingTop(20)
                         .setSwipeMaxChangeAngle(10)
@@ -84,20 +91,18 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
             @Override
             public void onClick(View v) {
                 mSwipeView.doSwipe(false);
-                progBar.setProgress(progBar.getProgress()+10);
+                progBar.setProgress(progBar.getProgress() + 10);
             }
         });
 
         findViewById(R.id.acceptBtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               mSwipeView.doSwipe(true);
+                mSwipeView.doSwipe(true);
 
 
             }
         });
-
-
 
 
         mSwipeView.addItemRemoveListener(new ItemRemovedListener() {
@@ -105,8 +110,8 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
             public void onItemRemoved(int count) {
                 vitalityCount++;
                 storyText.setText(instance1.getStoryText());
-                if(vitalityCount%3==0){
-                    progBar.setProgress(progBar.getProgress()+5);
+                if (vitalityCount % 3 == 0) {
+                    progBar.setProgress(progBar.getProgress() + 5);
                 }
                 Instance instance = new Instance();
                 mSwipeView.addView(new TinderCard(mContext, instance, cardViewHolderSize, MainActivity.this));
@@ -118,7 +123,7 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
     }
 
     private void makeSnow() {
-        Particles.emitParticles((ViewGroup)findViewById(R.id.parentFrameLayout).getParent());
+        Particles.emitParticles((ViewGroup) findViewById(R.id.parentFrameLayout).getParent());
     }
 
     @Override
@@ -131,25 +136,8 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
         if (hasFocus) {
-            hideSystemUI();
+            graphicsControl.hideSystemUI(frameLayout);
         }
-    }
-    //hides system tray and makes application full screen.
-    private void hideSystemUI() {
-        // Enables regular immersive mode.
-        // For "lean back" mode, remove SYSTEM_UI_FLAG_IMMERSIVE.
-        // Or for "sticky immersive," replace it with SYSTEM_UI_FLAG_IMMERSIVE_STICKY
-        View decorView = getWindow().getDecorView();
-        decorView.setSystemUiVisibility(
-                View.SYSTEM_UI_FLAG_IMMERSIVE
-                        // Set the content to appear under the system bars so that the
-                        // content doesn't resize when the system bars hide and show.
-                        | View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                        | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                        | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                        // Hide the nav bar and status bar
-                        | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                        | View.SYSTEM_UI_FLAG_FULLSCREEN);
     }
 
     // Shows the system bars by removing all the flags

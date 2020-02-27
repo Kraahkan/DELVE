@@ -17,6 +17,7 @@ import org.json.JSONArray;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
 /**
@@ -29,63 +30,63 @@ public class Utils {
     public static ArrayList<ArrayList<Instance>> loadInstance(Context context) {
         try {
 
-            int totalCount=0, j, first;
+            int totalCount = 0, j, first;
             GsonBuilder builder = new GsonBuilder();
             Gson gson = builder.create();
 
             JSONArray array = new JSONArray(loadJSONFromAsset(context, "instance.json"));
 
-            ArrayList<Instance> instanceListInner= new ArrayList<Instance>();
+            ArrayList<Instance> instanceListInner = new ArrayList<Instance>();
             ArrayList<ArrayList<Instance>> instanceListOuter = new ArrayList<ArrayList<Instance>>();
 
             Instance instance = gson.fromJson(array.getString(totalCount), Instance.class);
             instanceListInner.add(instance);
 
             String instID = instance.getInstanceID();
-            first = Integer.parseInt(instID.substring(0,1));
+            first = Integer.parseInt(instID.substring(0, 1));
 
             totalCount++;
             j = first;
 
             for (int i = 0; totalCount < array.length(); i++) {
 
-                while(j==first) {
+                while (j == first) {
 
                     instance = gson.fromJson(array.getString(totalCount), Instance.class);
                     totalCount++;
                     instID = instance.getInstanceID();
-                    first = Integer.parseInt(instID.substring(0,1));
+                    first = Integer.parseInt(instID.substring(0, 1));
 
-                        if (first>j || totalCount==array.length()){
-                            j++;
-                            instanceListInner.add(instance);
-                            instanceListOuter.add(instanceListInner);
-                            instanceListInner= new ArrayList<Instance>();
+                    if (first > j || totalCount == array.length()) {
+                        j++;
+                        instanceListInner.add(instance);
+                        instanceListOuter.add(instanceListInner);
+                        instanceListInner = new ArrayList<Instance>();
 
-                        }
-                    instanceListInner.add(instance);
                     }
+                    instanceListInner.add(instance);
+                }
             }
 
             String ID;
-             ID = instanceListOuter.get(0).get(0).getInstanceID();
-            Log.d("utils", "first "+ID);
-             ID = instanceListOuter.get(0).get(1).getInstanceID();
-            Log.d("utils", "second "+ID);
-             ID = instanceListOuter.get(0).get(2).getInstanceID();
-            Log.d("utils", "third "+ID);
-             ID = instanceListOuter.get(1).get(0).getInstanceID();
-            Log.d("utils", "fourth "+ID);
-             ID = instanceListOuter.get(1).get(1).getInstanceID();
-            Log.d("utils", "fifth "+ID);
-             ID = instanceListOuter.get(1).get(2).getInstanceID();
-            Log.d("utils", "sixth "+ID);
-             ID = instanceListOuter.get(1).get(3).getInstanceID();
-            Log.d("utils", "seventh "+ID);
-             ID = instanceListOuter.get(2).get(0).getInstanceID();
-            Log.d("utils", "eigth "+ID);
-             ID = instanceListOuter.get(2).get(1).getInstanceID();
-            Log.d("utils", "ninth "+ID);
+            ID = instanceListOuter.get(0).get(0).getInstanceID();
+            Log.d("utils", "first " + ID);
+            ID = instanceListOuter.get(0).get(1).getInstanceID();
+            Log.d("utils", "second " + ID);
+            ID = instanceListOuter.get(0).get(2).getInstanceID();
+            Log.d("utils", "third " + ID);
+            ID = instanceListOuter.get(1).get(0).getInstanceID();
+            Log.d("utils", "fourth " + ID);
+            ID = instanceListOuter.get(1).get(1).getInstanceID();
+            Log.d("utils", "fifth " + ID);
+            ID = instanceListOuter.get(1).get(2).getInstanceID();
+            Log.d("utils", "sixth " + ID);
+            ID = instanceListOuter.get(1).get(3).getInstanceID();
+            Log.d("utils", "seventh " + ID);
+            ID = instanceListOuter.get(2).get(0).getInstanceID();
+            Log.d("utils", "eigth " + ID);
+            ID = instanceListOuter.get(2).get(1).getInstanceID();
+            Log.d("utils", "ninth " + ID);
 
             Log.d("utils", "return");
             return instanceListOuter;
@@ -107,7 +108,7 @@ public class Utils {
             byte[] buffer = new byte[size];
             is.read(buffer);
             is.close();
-            json = new String(buffer, "UTF-8");
+            json = new String(buffer, StandardCharsets.UTF_8);
         } catch (IOException ex) {
             ex.printStackTrace();
             return null;

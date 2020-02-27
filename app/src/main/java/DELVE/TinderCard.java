@@ -49,8 +49,6 @@ public class TinderCard {
     private Callback mCallback;
 
 
-
-
     public TinderCard(Context context, Instance instance, Point cardViewHolderSize, Callback callback) {
         mContext = context;
         instance1 = instance;
@@ -105,16 +103,16 @@ public class TinderCard {
     @SwipingDirection
     public void onSwipingDirection(SwipeDirection direction) {
         Log.d("fries", "SwipingDirection " + direction.name());
-        if(direction.name()=="BOTTOM")
-        {
+        if (direction.name() == "BOTTOM") {
             Log.d("bottomFries", "SwipingDirection " + direction.name());
 
             Toast.makeText(mContext, "SUPER LIKE! Show any dialog here.", Toast.LENGTH_SHORT).show();
 
         }
     }
+
     @SwipingDirection
-    public void onSwipeBottom(SwipeDirection direction){
+    public void onSwipeBottom(SwipeDirection direction) {
         Log.d("DEBUG", "SwipeInDirectional " + direction.name());
     }
 
@@ -128,7 +126,7 @@ public class TinderCard {
 
         float alpha = 1 - distance / cardHolderDiagonalLength;
 
-        Log.d("DEBUG","onSwipeTouch "
+        Log.d("DEBUG", "onSwipeTouch "
                 + " xStart : " + xStart
                 + " yStart : " + yStart
                 + " xCurrent : " + xCurrent

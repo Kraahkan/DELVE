@@ -7,4 +7,6 @@
     <color name="grey">#e5e5e5</color>
 
     <color name="black_overlay">#66000000</color>
+
+    <color name="textViewColor">#171d1b</color>
 </resources>
