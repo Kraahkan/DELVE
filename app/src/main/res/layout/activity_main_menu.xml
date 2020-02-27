@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0099cc"
-    tools:context=".MainMenu">
+    android:background="@drawable/gradient_list"
+    android:orientation="vertical">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
@@ -19,6 +19,7 @@
             android:text="@string/app_name"
             android:textAllCaps="true"
             android:textSize="36sp"
+            android:textColor="@color/textViewColor"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
@@ -27,35 +28,37 @@
             app:layout_constraintVertical_bias="0.27" />
 
         <Button
-            android:id="@+id/button5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button"
+            android:id="@+id/buttonStart"
+            android:layout_width="138dp"
+            android:layout_height="64dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Start"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.632" />
+            app:layout_constraintVertical_bias="0.629" />
 
         <Button
-            android:id="@+id/button6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button"
+            android:id="@+id/buttonContinue"
+            android:layout_width="138dp"
+            android:layout_height="64dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Continue"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.524" />
+            app:layout_constraintVertical_bias="0.755" />
 
         <TableRow
             android:id="@+id/tableRow"
-            android:layout_width="397dp"
-            android:layout_height="72dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
+            android:layout_width="332dp"
+            android:layout_height="79dp"
             android:layout_marginTop="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

@@ -52,52 +52,52 @@ public class Instance {
     @Expose
     private String negativeText;
 
-    public void setAmbiance(String ambiance) {
-        this.ambiance = ambiance;
-    }
-
-    public void setMusic(String music) {
-        this.music = music;
-    }
-
-    public void setChapter(String chapter) {
-        this.chapter = chapter;
-    }
-
-    public void setStoryText(String storyText) {
-        this.storyText = storyText;
-    }
-
-    public void setPositiveText(String positiveText) {
-        this.positiveText = positiveText;
-    }
-
-    public void setNegativeText(String negativeText) {
-        this.negativeText = negativeText;
-    }
-
     public String getAmbiance() {
         return ambiance;
+    }
+
+    public void setAmbiance(String ambiance) {
+        this.ambiance = ambiance;
     }
 
     public String getMusic() {
         return music;
     }
 
+    public void setMusic(String music) {
+        this.music = music;
+    }
+
     public String getChapter() {
         return chapter;
+    }
+
+    public void setChapter(String chapter) {
+        this.chapter = chapter;
     }
 
     public String getStoryText() {
         return storyText;
     }
 
+    public void setStoryText(String storyText) {
+        this.storyText = storyText;
+    }
+
     public String getPositiveText() {
         return positiveText;
     }
 
+    public void setPositiveText(String positiveText) {
+        this.positiveText = positiveText;
+    }
+
     public String getNegativeText() {
         return negativeText;
+    }
+
+    public void setNegativeText(String negativeText) {
+        this.negativeText = negativeText;
     }
 
     public String getName() {
@@ -116,23 +116,28 @@ public class Instance {
     public void setInstanceID(String instanceID) {
         this.instanceID = instanceID;
     }
-    public String getTitle(){
+
+    public String getTitle() {
         return title;
     }
-    public void setTitle(String title)
-    {
+
+    public void setTitle(String title) {
         this.title = title;
     }
-    public String getArt(){
+
+    public String getArt() {
         return art;
     }
-    public void setArt(String art){
+
+    public void setArt(String art) {
         this.art = art;
     }
-    public String getSoundEffect(){
+
+    public String getSoundEffect() {
         return soundEffect;
     }
-    public void setSoundEffect(String soundEffect){
+
+    public void setSoundEffect(String soundEffect) {
         this.soundEffect = soundEffect;
     }
 

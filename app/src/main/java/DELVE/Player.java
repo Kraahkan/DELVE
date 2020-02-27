@@ -19,16 +19,11 @@ public class Player {
     private int numberOfSwipes = 0;
 
     // Support for buffs / debuffs to represent a player's status beyond vitality
-    private Effect[] playerEffects = { Effect.HEALTHY };
+    private Effect[] playerEffects = {Effect.HEALTHY};
     private int playerVitality = 7;
 
     // Abritrary limit of 10000 items
     private String[] items = new String[10000];
-
-    private enum Effect {
-        HEALTHY,
-        SICK,
-    }
 
     private void intializePlayer(Context context) {
         sharedPrefPlayer = context.getSharedPreferences("myPref", MODE_PRIVATE);
@@ -52,6 +47,11 @@ public class Player {
 
     public String getPlayerName() {
         return characterName;
+    }
+
+    private enum Effect {
+        HEALTHY,
+        SICK,
     }
 
 }

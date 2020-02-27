@@ -4,7 +4,7 @@
     android:id="@+id/parentFrameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
+    android:background="@drawable/gradient_list"
     android:orientation="vertical">
 
     <LinearLayout
@@ -19,6 +19,7 @@
             android:layout_height="130dp"
             android:layout_margin="15dp"
             android:gravity="center"
+            android:textColor="@color/textViewColor"
             android:text="@string/storyText"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -69,6 +70,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:gravity="center"
+                android:textColor="@color/textViewColor"
                 android:text="Vitality"
                 android:textStyle="bold" />
         </LinearLayout>
