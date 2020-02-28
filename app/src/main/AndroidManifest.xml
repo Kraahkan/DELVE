@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainMenu"
+            android:name=".landingPage"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_landing_page"
             android:theme="@style/FullscreenTheme">
@@ -24,6 +24,9 @@
         </activity>
         <activity android:name=".MainActivity">
 
+        </activity>
+        <activity android:name=".MainMenu">
+            
         </activity>
     </application>
 

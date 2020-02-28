@@ -116,6 +116,8 @@ public class landingPage extends AppCompatActivity {
         //findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
 
 
+
+
         final ScheduledExecutorService worker =
                 Executors.newSingleThreadScheduledExecutor();
         {
