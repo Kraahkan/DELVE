@@ -1,13 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.mindorks.android:placeholderview-annotations:1.0.3@jar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mindorks.android/placeholderview-annotations/1.0.3/f921938bcefd5ea4f741fc2466e20005f84d0e2e/placeholderview-annotations-1.0.3.jar!/" />
+      <root url="jar://C:/Android-Gradle/.gradle/caches/modules-2/files-2.1/com.mindorks.android/placeholderview-annotations/1.0.3/f921938bcefd5ea4f741fc2466e20005f84d0e2e/placeholderview-annotations-1.0.3.jar!/" />
     </CLASSES>
-    <JAVADOC>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mindorks.android/placeholderview-annotations/1.0.3/a97e7a444d970a9a371fc0aafe00da5fade1c99b/placeholderview-annotations-1.0.3-javadoc.jar!/" />
-    </JAVADOC>
+    <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mindorks.android/placeholderview-annotations/1.0.3/6a709794411ff53152b1a7f7374cd5b88c6697c7/placeholderview-annotations-1.0.3-sources.jar!/" />
+      <root url="jar://C:/Android-Gradle/.gradle/caches/modules-2/files-2.1/com.mindorks.android/placeholderview-annotations/1.0.3/6a709794411ff53152b1a7f7374cd5b88c6697c7/placeholderview-annotations-1.0.3-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
