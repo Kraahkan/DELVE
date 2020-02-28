@@ -20,6 +20,7 @@
             android:layout_margin="15dp"
             android:layout_marginTop="60dp"
             android:gravity="center"
+            android:textColor="#111111"
             android:text="@string/storyText"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -82,6 +83,7 @@
                 android:layout_marginTop="15dp"
                 android:gravity="center"
                 android:text="Vitality"
+                android:textColor="#111111"
                 android:textStyle="bold" />
         </LinearLayout>
 
