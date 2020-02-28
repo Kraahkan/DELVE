@@ -11,7 +11,6 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< Updated upstream
     <list default="true" id="04e5b7d9-0295-48ea-bc3a-e77fa52e6e26" name="Default Changelist" comment="">
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -41,9 +40,6 @@
 =======
 >>>>>>> master
     </list>
-=======
-    <list default="true" id="04e5b7d9-0295-48ea-bc3a-e77fa52e6e26" name="Default Changelist" comment="" />
->>>>>>> Stashed changes
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -535,7 +531,6 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
     <frame x="184" y="45" width="2101" height="929" extended-state="0" />
@@ -551,9 +546,6 @@
 >>>>>>> master
 =======
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-=======
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
->>>>>>> Stashed changes
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" sideWeight="0.50179857" side_tool="true" weight="0.21758135" />
