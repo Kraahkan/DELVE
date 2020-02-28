@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
@@ -91,12 +92,14 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
 
         storyText.setText(instance.getStoryText());
 
-        
-        GameController.playSounds(this,instance.getAmbiance(), .1f);
-        GameController.playSounds(this,instance.getMusic(),1);
-        Log.d("Ambiance",instance.getAmbiance());
+        if (!TextUtils.isEmpty(instance.getAmbiance()))
+            GameController.playSounds(this,instance.getAmbiance(), .1f);
 
+       // if (instance.getAmbiance() != "")
+           // GameController.playSounds(this,instance.getAmbiance(), .1f);
 
+   //     if (instance.getMusic() != null)
+     //       GameController.playSounds(this,instance.getMusic(),1);
 
 
         findViewById(R.id.exploreBtn).setOnClickListener(new View.OnClickListener() {
