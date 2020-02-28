@@ -19,6 +19,7 @@ public class MainMenu extends AppCompatActivity {
 
         //Buttons
         Button buttonStart = findViewById(R.id.buttonStart);
+        Button buttonContinue = findViewById(R.id.buttonContinue);
 
 
         buttonStart.setOnClickListener(new View.OnClickListener() {
@@ -32,8 +33,14 @@ public class MainMenu extends AppCompatActivity {
         //For graphics
         FrameLayout frameLayout = findViewById(R.id.layout);
         AnimationDrawable animationDrawable = (AnimationDrawable) frameLayout.getBackground();
+        AnimationDrawable animationDrawable1 = (AnimationDrawable) buttonStart.getBackground();
+        AnimationDrawable animationDrawable2 = (AnimationDrawable) buttonContinue.getBackground();
         graphicsControl.hideSystemUI(getWindow().getDecorView());
         graphicsControl.startAnimation(animationDrawable, 2);
+      //Gradient For Buttons
+        graphicsControl.startAnimation(animationDrawable1, 2);
+        graphicsControl.startAnimation(animationDrawable2, 2);
+      //Gradient For Buttons
         GameController.playSoundEffect(this,"mus_landr_sting_low_warm");
         //GameController.playMusic(this,"amb_night",.3f);
     }
