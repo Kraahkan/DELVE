@@ -13,4 +13,13 @@ public class GameController {
         //soundController.playOneShot("mus_river",0 );
         soundController.playMusic(musicName, volume);
     }
+
+    public static void playSoundEffect(Context context, String soundName) {
+
+        SoundController soundController = new SoundController();
+        soundController.initialize(context);
+        // soundController.playOneShot("fx_door_open",0 );
+        //soundController.playOneShot("mus_river",0 );
+        soundController.playOneShot(soundName, 1);
+    }
 }

@@ -9,7 +9,7 @@
       "negativeText": "Keep going",
       "positiveID": 1.2,
       "negativeID": 1.3,
-      "soundEffect": "fx_shivers",
+      "soundEffect": "fx_shiver",
       "ambiance": "amb_wind_icerain",
       "music": "mus_landr_into_the_snow_low_warm",
       "color": "white"
