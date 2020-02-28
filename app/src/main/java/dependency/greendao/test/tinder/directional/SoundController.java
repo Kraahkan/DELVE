@@ -21,7 +21,7 @@ public class SoundController {
 
     float volume = 0;
 
-    private final static int MAX_VOLUME = 180;
+    private int MAX_VOLUME = 180;
 
     public void initialize(Context context) {
 
@@ -51,23 +51,23 @@ public class SoundController {
         playSound(soundName);
     }
 
-    public void playMusic(String musicName) { // only one music at a time
-        crossFade(musicName);
+    public void playMusic(String musicName, float desiredVolume) { // only one music at a time
+        crossFade(musicName, desiredVolume);
     }
 
     public void playAmbiance(String ambianceName) { // only one ambiance at a time
-        crossFade(ambianceName);
+        crossFade(ambianceName, 1);
     }
 
 
-    private void crossFade(String newSound) {
-        fadeIn(newSound);
+    private void crossFade(String newSound, float desiredVolume) {
+        fadeIn(newSound, desiredVolume);
         fadeOut(oldSound);
 
         oldSound = newSound;
     }
 
-    private void fadeIn(String soundName) {
+    private void fadeIn(String soundName, float desiredVolume) {
 
         Uri uri=Uri.parse("android.resource://"+activityContext.getPackageName()+"/raw/" + soundName);
         final MediaPlayer mp = MediaPlayer.create(activityContext, uri);
@@ -76,7 +76,7 @@ public class SoundController {
         final int FADE_DURATION = 3000; //The duration of the fade, ex. 30000 is a proper fade
         //The amount of time between volume changes. The smaller this is, the smoother the fade
         final int FADE_INTERVAL = 250;
-        final int MAX_VOLUME = 1; //The volume will increase from 0 to 1
+        final float MAX_VOLUME = desiredVolume; //The volume will increase from 0 to 1
         int numberOfSteps = FADE_DURATION/FADE_INTERVAL; //Calculate the number of fade steps
         //Calculate by how much the volume changes each step
         final float deltaVolume = MAX_VOLUME / (float)numberOfSteps;

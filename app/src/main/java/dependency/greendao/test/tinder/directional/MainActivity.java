@@ -91,7 +91,9 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
 
         storyText.setText(instance.getStoryText());
 
-       // GameController.playSounds(this,instance.getAmbiance());
+        
+        GameController.playSounds(this,instance.getAmbiance(), .1f);
+        GameController.playSounds(this,instance.getMusic(),1);
         Log.d("Ambiance",instance.getAmbiance());
 
 
@@ -133,7 +135,7 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
     }
     @Override
     public void onSwipeLeft() {
-        GameController.playSounds(this,"ui_click1");
+
         String instID = instance.getNegativeID();
         int first = Integer.parseInt(instID.substring(0,1));
         int second = Integer.parseInt(instID.substring(2,3));
@@ -145,7 +147,7 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
     }
     @Override
     public void onSwipeRight() {
-        GameController.playSounds(this,"ui_click2");
+
         String instID = instance.getPositiveID();
         addInventory(instance);
         hasKey(instance);
