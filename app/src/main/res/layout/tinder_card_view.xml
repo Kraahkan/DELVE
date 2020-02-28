@@ -33,14 +33,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="350dp"
-            android:gravity="center"
+            android:gravity=""
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/cardTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:gravity="center_horizontal|bottom"
                 android:text="@string/locationText"
                 android:textStyle="bold" />
         </LinearLayout>
