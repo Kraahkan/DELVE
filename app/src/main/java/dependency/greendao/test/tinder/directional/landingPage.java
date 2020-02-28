@@ -117,7 +117,6 @@ public class landingPage extends AppCompatActivity {
 
 
 
-
         final ScheduledExecutorService worker =
                 Executors.newSingleThreadScheduledExecutor();
         {

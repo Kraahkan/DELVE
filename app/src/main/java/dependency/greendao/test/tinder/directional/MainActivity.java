@@ -2,12 +2,14 @@ package dependency.greendao.test.tinder.directional;
 
 import android.content.Context;
 import android.graphics.Point;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
     ArrayList<ArrayList<Instance>> instanceArrayList;
     ArrayList<String> inverntoryArray;
 
+    GraphicsControl graphicsControl = new GraphicsControl();
 
 
 
@@ -43,15 +46,23 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
         mContext = getApplicationContext();
         storyText = findViewById(R.id.storyTextView);
         instanceArrayList = Utils.loadInstance(mContext);
-
+        FrameLayout parentLayout = findViewById(R.id.parentLayout);
 
         instance = instanceArrayList.get(0).get(0);
         setCardView(instance);
 
+        playAnimation(parentLayout);
 
     }
 
+    public void playAnimation(FrameLayout layout) {
 
+        AnimationDrawable animationDrawable = (AnimationDrawable) layout.getBackground();
+
+
+        graphicsControl.hideSystemUI(getWindow().getDecorView());
+        graphicsControl.startAnimation(animationDrawable, 2);
+    }
 
     public void setCardView(Instance instance){
 

@@ -264,7 +264,7 @@
     "positiveID": "",
     "negativeID": "",
     "soundEffect": "fx_footsteps_snow_crunchy2",
-    "ambiance": "amb_night",
+    "ambiance": "",
     "music": "",
     "color": "white"
   }

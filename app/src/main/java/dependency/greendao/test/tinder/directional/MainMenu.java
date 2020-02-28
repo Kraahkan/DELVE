@@ -19,6 +19,8 @@ public class MainMenu extends AppCompatActivity {
 
         //Buttons
         Button buttonStart = findViewById(R.id.buttonStart);
+
+
         buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -32,5 +34,7 @@ public class MainMenu extends AppCompatActivity {
         AnimationDrawable animationDrawable = (AnimationDrawable) frameLayout.getBackground();
         graphicsControl.hideSystemUI(getWindow().getDecorView());
         graphicsControl.startAnimation(animationDrawable, 2);
+        GameController.playSoundEffect(this,"mus_landr_sting_low_warm");
+        GameController.playMusic(this,"amb_night",5f);
     }
 }
