@@ -93,7 +93,8 @@ public class TinderCard {
 
     @Click(R.id.profileImageView)
     public void onClick() {
-        Log.d("EVENT", "profileImageView click");
+        //Log.d("EVENT", "profileImageView click");
+        mCallback.onPicClick();
 
     }
 
@@ -173,5 +174,6 @@ public class TinderCard {
         void onSwipeDown();
         void onSwipeRight();
         void onSwipeLeft();
+        void onPicClick();
     }
 }

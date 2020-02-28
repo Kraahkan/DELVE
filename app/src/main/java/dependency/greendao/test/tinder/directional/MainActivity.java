@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
     Instance instance;
     ArrayList<ArrayList<Instance>> instanceArrayList;
     ArrayList<String> inverntoryArray;
+    int vitailityCount;
 
 
 
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
 
         instance = instanceArrayList.get(0).get(0);
         setCardView(instance);
+        progBar.setProgress(10);
 
 
     }
@@ -57,6 +59,9 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
 
 
 
+        if(vitailityCount%3 ==1 ){
+            progBar.setProgress(progBar.getProgress() + 10);
+        }
 
         int bottomMargin = Utils.dpToPx(160);
         Point windowSize = Utils.getDisplaySize(getWindowManager());
@@ -123,16 +128,15 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
     }
 
 
-
     @Override
     public void onSwipeDown() {
-        Toast.makeText(this, "bottom", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "bottom", Toast.LENGTH_SHORT).show();
         Log.d("GRAPE", "main");
         setCardView(instance);
     }
     @Override
     public void onSwipeUp() {
-        Toast.makeText(this, "up", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "up", Toast.LENGTH_SHORT).show();
         setCardView(instance);
 
     }
@@ -147,6 +151,13 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
         instance = instanceArrayList.get(first-1).get(second-1);
         setCardView(instance);
 
+        vitailityCount++;
+
+    }
+    @Override
+    public void onPicClick()
+    {
+        Toast.makeText(this, "inspect", Toast.LENGTH_SHORT).show();
     }
     @Override
     public void onSwipeRight() {
@@ -160,6 +171,7 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
 
         instance = instanceArrayList.get(first-1).get(second-1);
         setCardView(instance);
+        vitailityCount++;
     }
     public void addInventory(Instance instance){
         try {
