@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">TinderSwipe</string>
+    <string name="app_name">The Shiver</string>
     <string name="storyText">This is dummy text \n\n for the story of the game.</string>
     <string name="locationText">Dummy location text</string>
 
-    <string name="title_activity_landing_page">landingPage</string>
+    <string name="title_activity_landing_page">The Shiver</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
