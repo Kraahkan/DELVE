@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
@@ -32,6 +33,8 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
     ArrayList<ArrayList<Instance>> instanceArrayList;
     ArrayList<String> inverntoryArray;
 
+    Context context;
+
     GraphicsControl graphicsControl = new GraphicsControl();
 
 
@@ -40,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        context = this;
 
         progBar = findViewById(R.id.progressBar);
         mSwipeView = findViewById(R.id.swipeView);
@@ -52,6 +56,23 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
         setCardView(instance);
 
         playAnimation(parentLayout);
+
+        //setOnTouch(mSwipeView);
+
+    }
+
+    private void setOnTouch(View view) {
+        view.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if(event.getAction() == MotionEvent.ACTION_UP){
+                    GameController.playSoundEffect(context,"woosh");
+                    // Do what you want
+                    return true;
+                }
+                return false;
+            }
+        });
 
     }
 
