@@ -11,7 +11,7 @@
       "negativeID": 1.3,
       "soundEffect": "fx_shivers",
       "ambiance": "amb_wind_icerain",
-      "music": "mus_landr_wildlife_low_warm",
+      "music": "mus_landr_into_the_snow_low_warm",
       "color": "white"
     },
     {
@@ -26,7 +26,7 @@
       "negativeID": 1.4,
       "soundEffect": "fx_footsteps_snow_crunchy1",
       "ambiance": "",
-      "music": "mus_landr_wildlife_low_warm",
+      "music": "",
       "color": "white"
     },
   {
@@ -115,7 +115,7 @@
     "negativeID": 1.10,
     "soundEffect": "fx_footsteps_snow_crunchy1",
     "ambiance": "",
-    "music": "mus_landr_expedition_low_warm",
+    "music": "",
     "color": "white"
   },
 {
@@ -261,11 +261,11 @@
     "storyText": "The tree reaches up to the grey sky, as if gasping for air. At it's base, shadows shroud the bark.",
     "positiveText": "",
     "negativeText": "",
-    "positiveID": 1.20,
-    "negativeID": 1.20,
+    "positiveID": "",
+    "negativeID": "",
     "soundEffect": "fx_footsteps_snow_crunchy2",
     "ambiance": "amb_night",
-    "music": "mus_landr_into_the_snow_low_warm",
+    "music": "",
     "color": "white"
   }
 ]

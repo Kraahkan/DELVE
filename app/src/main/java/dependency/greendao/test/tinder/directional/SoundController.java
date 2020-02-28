@@ -5,6 +5,7 @@ import android.content.res.Resources;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Debug;
+import android.provider.MediaStore;
 import android.util.Log;
 
 import java.io.File;
@@ -14,12 +15,13 @@ import java.util.TimerTask;
 
 public class SoundController {
 
-    String oldSound = "";
+    static MediaPlayer oldSound;
     Context activityContext;
 
     private MediaPlayer mediaPlayer;
 
     float volume = 0;
+    float oldVolume = 0;
 
     private int MAX_VOLUME = 180;
 
@@ -62,15 +64,14 @@ public class SoundController {
 
     private void crossFade(String newSound, float desiredVolume) {
         fadeIn(newSound, desiredVolume);
-        fadeOut(oldSound);
+        fadeOut();
 
-        oldSound = newSound;
     }
 
     private void fadeIn(String soundName, float desiredVolume) {
 
         Uri uri=Uri.parse("android.resource://"+activityContext.getPackageName()+"/raw/" + soundName);
-        final MediaPlayer mp = MediaPlayer.create(activityContext, uri);
+        oldSound = MediaPlayer.create(activityContext, uri);
         // mp.start();
 
         final int FADE_DURATION = 3000; //The duration of the fade, ex. 30000 is a proper fade
@@ -86,9 +87,56 @@ public class SoundController {
         TimerTask timerTask = new TimerTask() {
             @Override
             public void run() {
-                fadeInStep(deltaVolume, mp); //Do a fade step
+                fadeInStep(deltaVolume, oldSound); //Do a fade step
                 //Cancel and Purge the Timer if the desired volume has been reached
-                if(volume>=1f){
+                if(oldVolume>=1f){
+                    timer.cancel();
+                    timer.purge();
+                }
+            }
+        };
+
+        timer.schedule(timerTask,FADE_INTERVAL,FADE_INTERVAL);
+
+        oldSound.setVolume(0,0);
+        oldSound.start();
+
+    }
+
+    private void fadeInStep(float deltaVolume, MediaPlayer mp){
+        mp.setVolume(volume, volume);
+        volume += deltaVolume;
+
+    }
+
+    private void fadeOutStep(float deltaVolume){
+        oldSound.setVolume(oldVolume, oldVolume);
+        oldVolume -= deltaVolume;
+
+    }
+
+    private void fadeOut() {
+
+
+       MediaPlayer mp = oldSound;
+        // mp.start();
+
+        final int FADE_DURATION = 3000; //The duration of the fade, ex. 30000 is a proper fade
+        //The amount of time between volume changes. The smaller this is, the smoother the fade
+        final int FADE_INTERVAL = 250;
+        final float MAX_VOLUME = 1; //The volume will increase from 0 to 1
+        int numberOfSteps = FADE_DURATION/FADE_INTERVAL; //Calculate the number of fade steps
+        //Calculate by how much the volume changes each step
+        final float deltaVolume = MAX_VOLUME / (float)numberOfSteps;
+
+        //Create a new Timer and Timer task to run the fading outside the main UI thread
+        final Timer timer = new Timer(true);
+        TimerTask timerTask = new TimerTask() {
+            @Override
+            public void run() {
+                fadeOutStep(deltaVolume); //Do a fade step
+                //Cancel and Purge the Timer if the desired volume has been reached
+                if(volume<=0f){
                     timer.cancel();
                     timer.purge();
                 }
@@ -100,17 +148,6 @@ public class SoundController {
         mp.setVolume(0,0);
         mp.start();
     }
-
-    private void fadeInStep(float deltaVolume, MediaPlayer mp){
-        mp.setVolume(volume, volume);
-        volume += deltaVolume;
-
-    }
-
-    private void fadeOut(String soundName) { // fade out
-
-    }
-
     private void playSound(String soundName) { // WORK ON THIS
         // Uri.
         //playr = MediaPlayer.create(activityContext,R.raw. + soundName);

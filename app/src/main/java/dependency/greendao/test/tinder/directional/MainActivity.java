@@ -92,8 +92,8 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
 
         storyText.setText(instance.getStoryText());
 
-        if (!TextUtils.isEmpty(instance.getAmbiance()))
-            GameController.playSounds(this,instance.getAmbiance(), .1f);
+        if (!TextUtils.isEmpty(instance.getMusic()))
+            GameController.playMusic(this,instance.getMusic(), 1f);
 
        // if (instance.getAmbiance() != "")
            // GameController.playSounds(this,instance.getAmbiance(), .1f);

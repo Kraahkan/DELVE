@@ -5,9 +5,7 @@ import android.content.Context;
 public class GameController {
 
 
-    public static void playSounds(Context context, String musicName, float volume) {
-
-
+    public static void playMusic(Context context, String musicName, float volume) {
 
         SoundController soundController = new SoundController();
         soundController.initialize(context);
