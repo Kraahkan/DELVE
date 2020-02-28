@@ -83,8 +83,12 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
 
         currentID = instance.getInstanceID();
         mSwipeView.addView(new TinderCard(mContext, instance, cardViewHolderSize, this));
+
+
+
         storyText.setText(instance.getStoryText());
 
+        GameController.setAmbiance(instance.getAmbiance());
 
 
         findViewById(R.id.exploreBtn).setOnClickListener(new View.OnClickListener() {
