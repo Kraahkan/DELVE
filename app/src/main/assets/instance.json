@@ -19,8 +19,7 @@
       "chapter": "",
       "title": "The White",
       "art": "woodlandWave",
-      "storyText": "A wave of trees cuts an upward line across the mountain above.
-",
+      "storyText": "A wave of trees cuts an upward line across the mountain above.",
       "positiveText": "Move into the trees",
       "negativeText": "Leave the forest",
       "positiveID": 1.3,
@@ -50,8 +49,7 @@
     "chapter": "",
     "title": "The White",
     "art": "edgeOrange",
-    "storyText": "Skies darken as you reach the end of the trees.
-",
+    "storyText": "Skies darken as you reach the end of the trees.",
     "positiveText": "Head up the mountain",
     "negativeText": "Go through the forest",
     "positiveID": 1.5,
@@ -123,7 +121,7 @@
 {
     "instanceID": 1.9,
     "chapter": "",
-    "title": "The Woodland,
+    "title": "The Woodland",
     "art": "noOrange",
     "storyText": "The orange tree tops fade to black, and the mountain peaks appear closer.",
     "positiveText": "",
