@@ -13,7 +13,7 @@
 
         <ImageView
             android:id="@+id/textView3"
-            android:layout_width="242dp"
+            android:layout_width="match_parent"
             android:layout_height="113dp"
             android:gravity="center_horizontal|center_vertical"
             android:text="@string/app_name"
@@ -32,6 +32,7 @@
             android:id="@+id/buttonStart"
             android:layout_width="138dp"
             android:layout_height="64dp"
+            android:background="@drawable/gradient_1"
             android:gravity="center_horizontal|center_vertical"
             android:text="Start"
             android:textSize="14sp"
@@ -46,6 +47,7 @@
             android:id="@+id/buttonContinue"
             android:layout_width="138dp"
             android:layout_height="64dp"
+            android:background="@drawable/gradient_1"
             android:gravity="center_horizontal|center_vertical"
             android:text="Continue"
             android:textSize="14sp"
