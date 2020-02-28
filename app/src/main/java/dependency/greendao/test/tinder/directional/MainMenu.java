@@ -35,6 +35,6 @@ public class MainMenu extends AppCompatActivity {
         graphicsControl.hideSystemUI(getWindow().getDecorView());
         graphicsControl.startAnimation(animationDrawable, 2);
         GameController.playSoundEffect(this,"mus_landr_sting_low_warm");
-        GameController.playMusic(this,"amb_night",5f);
+        //GameController.playMusic(this,"amb_night",.3f);
     }
 }
