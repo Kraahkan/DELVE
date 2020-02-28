@@ -2,12 +2,15 @@ package dependency.greendao.test.tinder.directional;
 
 import android.content.Context;
 import android.graphics.Point;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.MotionEvent;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -31,6 +34,9 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
     ArrayList<String> inverntoryArray;
     int vitailityCount;
 
+    Context context;
+
+    GraphicsControl graphicsControl = new GraphicsControl();
 
 
 
@@ -38,22 +44,48 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        context = this;
 
         progBar = findViewById(R.id.progressBar);
         mSwipeView = findViewById(R.id.swipeView);
         mContext = getApplicationContext();
         storyText = findViewById(R.id.storyTextView);
         instanceArrayList = Utils.loadInstance(mContext);
-
+        FrameLayout parentLayout = findViewById(R.id.parentLayout);
 
         instance = instanceArrayList.get(0).get(0);
         setCardView(instance);
         progBar.setProgress(10);
 
+        playAnimation(parentLayout);
+
+        //setOnTouch(mSwipeView);
 
     }
 
+    private void setOnTouch(View view) {
+        view.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if(event.getAction() == MotionEvent.ACTION_UP){
+                    GameController.playSoundEffect(context,"woosh");
+                    // Do what you want
+                    return true;
+                }
+                return false;
+            }
+        });
 
+    }
+
+    public void playAnimation(FrameLayout layout) {
+
+        AnimationDrawable animationDrawable = (AnimationDrawable) layout.getBackground();
+
+
+        graphicsControl.hideSystemUI(getWindow().getDecorView());
+        graphicsControl.startAnimation(animationDrawable, 2);
+    }
 
     public void setCardView(Instance instance){
 
@@ -99,6 +131,9 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
 
         if (!TextUtils.isEmpty(instance.getMusic()))
             GameController.playMusic(this,instance.getMusic(), 1f);
+
+        if (!TextUtils.isEmpty(instance.getSoundEffect()))
+            GameController.playSoundEffect(this,instance.getSoundEffect());
 
        // if (instance.getAmbiance() != "")
            // GameController.playSounds(this,instance.getAmbiance(), .1f);
