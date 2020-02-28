@@ -54,6 +54,7 @@
             android:id="@+id/exploreBtn"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:visibility="invisible"
             android:background="@drawable/inspect"
             android:onClick="explore()" />
 
@@ -87,6 +88,7 @@
         <ImageButton
             android:id="@+id/inspectBtn"
             android:layout_width="50dp"
+            android:visibility="invisible"
             android:layout_height="50dp"
             android:background="@drawable/explore"
             android:onClick="inspect()" />
