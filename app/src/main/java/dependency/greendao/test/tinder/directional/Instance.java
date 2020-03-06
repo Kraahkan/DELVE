@@ -36,6 +36,10 @@ public class Instance {
     @Expose
     private String music;
 
+    @SerializedName("font")
+    @Expose
+    private String font;
+
     @SerializedName("chapter")
     @Expose
     private String chapter;
@@ -114,6 +118,14 @@ public class Instance {
 
     public void setAmbiance(String ambiance) {
         this.ambiance = ambiance;
+    }
+
+    public String getFont() {
+        return font;
+    }
+
+    public void setFont(String font) {
+        this.font = font;
     }
 
     public String getMusic() {
