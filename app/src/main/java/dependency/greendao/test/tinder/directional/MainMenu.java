@@ -23,11 +23,21 @@ public class MainMenu extends AppCompatActivity {
 
 
         buttonStart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent myIntent = new Intent(MainMenu.this, MainActivity.class);
-                MainMenu.this.startActivity(myIntent);
-            }
+                                           @Override
+                                           public void onClick(View view) {
+                                               Intent myIntent = new Intent(MainMenu.this, MainActivity.class);
+                                               MainMenu.this.startActivity(myIntent);
+                                               myIntent.putExtra("key", 0);
+                                           }
+                                       });
+
+            buttonContinue.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent myIntent = new Intent(MainMenu.this, MainActivity.class);
+                    myIntent.putExtra("key", 1);
+                    MainMenu.this.startActivity(myIntent);
+                }
         });
 
         //For graphics

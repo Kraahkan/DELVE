@@ -1,6 +1,8 @@
 package dependency.greendao.test.tinder.directional;
 
 import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Point;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
@@ -32,19 +34,26 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
     Instance instance;
     ArrayList<ArrayList<Instance>> instanceArrayList;
     ArrayList<String> inverntoryArray;
-    int vitailityCount;
+    int vitailityCount, start;
+    SharedPreferences.Editor editor;
 
     Context context;
 
     GraphicsControl graphicsControl = new GraphicsControl();
 
-
+    @Override
+    public void onBackPressed() {
+        moveTaskToBack(false);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         context = this;
+        Intent intent = getIntent();
+        start = intent.getIntExtra("key", 0);
+
 
         progBar = findViewById(R.id.progressBar);
         mSwipeView = findViewById(R.id.swipeView);
@@ -53,13 +62,31 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
         instanceArrayList = Utils.loadInstance(mContext);
         FrameLayout parentLayout = findViewById(R.id.parentLayout);
 
-        instance = instanceArrayList.get(0).get(0);
-        setCardView(instance);
+        SharedPreferences sharedPref = MainActivity.this.getPreferences(Context.MODE_PRIVATE);
+
+
+        if (start==1) {
+
+
+            currentID = sharedPref.getString("ID", "2.2");
+            int first = Integer.parseInt(currentID.substring(0, 1));
+            int second = Integer.parseInt(currentID.substring(2, 3));
+            instance = instanceArrayList.get(first - 1).get(second - 1);
+            setCardView(instance);
+            Toast.makeText(this, currentID, Toast.LENGTH_SHORT).show();
+
+        }
+        else
+        {
+            instance = instanceArrayList.get(0).get(0);
+            setCardView(instance);
+        }
+
         progBar.setProgress(10);
 
         playAnimation(parentLayout);
 
-        //setOnTouch(mSwipeView);
+
 
     }
 
@@ -180,6 +207,9 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
 
         // HEY FUTURE CARLIN, PLZ FIX TRUNCATIONS THANK YOU LOVE U BYE
 
+        SharedPreferences sharedPref = MainActivity.this.getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPref.edit();
+
         String instID = instance.getNegativeID();
         int first = Integer.parseInt(instID.substring(0,1));
         int second = Integer.parseInt(instID.substring(2,3));
@@ -188,16 +218,22 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
         instance = instanceArrayList.get(first-1).get(second-1);
         setCardView(instance);
 
+        editor.putString("ID", instID);
+        editor.commit();
+
         vitailityCount++;
 
     }
     @Override
     public void onPicClick()
     {
-        Toast.makeText(this, "inspect", Toast.LENGTH_SHORT).show();
+
     }
     @Override
     public void onSwipeRight() {
+
+        SharedPreferences sharedPref = MainActivity.this.getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPref.edit();
 
         String instID = instance.getPositiveID();
         addInventory(instance);
@@ -208,6 +244,9 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
 
         instance = instanceArrayList.get(first-1).get(second-1);
         setCardView(instance);
+        editor.putString("ID", instID);
+        editor.commit();
+        Toast.makeText(this, instID, Toast.LENGTH_SHORT).show();
         vitailityCount++;
     }
     public void addInventory(Instance instance){
