@@ -69,20 +69,21 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
 
 
             currentID = sharedPref.getString("ID", "2.2");
+            int prog =  sharedPref.getInt("Prg", 10);
             int first = Integer.parseInt(currentID.substring(0, 1));
             int second = Integer.parseInt(currentID.substring(2, 3));
             instance = instanceArrayList.get(first - 1).get(second - 1);
             setCardView(instance);
-            Toast.makeText(this, currentID, Toast.LENGTH_SHORT).show();
+            progBar.setProgress(prog);
 
         }
         else
         {
-            instance = instanceArrayList.get(0).get(0);
+            instance = instanceArrayList.get(3).get(0);
             setCardView(instance);
+            progBar.setProgress(10);
         }
 
-        progBar.setProgress(10);
 
         playAnimation(parentLayout);
 
@@ -122,6 +123,7 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
             progBar.setProgress(progBar.getProgress() + 10);
         }
 
+
         int bottomMargin = Utils.dpToPx(160);
         Point windowSize = Utils.getDisplaySize(getWindowManager());
 
@@ -153,7 +155,6 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
         mSwipeView.addView(new TinderCard(mContext, instance, cardViewHolderSize, this));
 
 
-
         storyText.setText(instance.getStoryText());
 
         if (!TextUtils.isEmpty(instance.getMusic()))
@@ -162,11 +163,12 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
         if (!TextUtils.isEmpty(instance.getSoundEffect()))
             GameController.playSoundEffect(this,instance.getSoundEffect());
 
-       if(!TextUtils.isEmpty(instance.getAmbiance()))
+
+        if(!TextUtils.isEmpty(instance.getAmbiance()))
            GameController.playSoundEffect(this,instance.getAmbiance());
 
-   //     if (instance.getMusic() != null)
-     //       GameController.playSounds(this,instance.getMusic(),1);
+        //     if (instance.getMusic() != null)
+        //     GameController.playSounds(this,instance.getMusic(),1);
 
 
         findViewById(R.id.exploreBtn).setOnClickListener(new View.OnClickListener() {
@@ -219,9 +221,24 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
         setCardView(instance);
 
         editor.putString("ID", instID);
+        editor.putInt("Prg", progBar.getProgress());
         editor.commit();
 
         vitailityCount++;
+        int progress = Integer.parseInt(instance.getChapter());
+
+        if(progress!=0)
+        {
+            progBar.setProgress(progBar.getProgress() + progress);
+
+            if(progress <0){
+                Toast.makeText(this, "You've lost " +progress+" vitality", Toast.LENGTH_SHORT).show();
+            }
+            else {
+                Toast.makeText(this, "You've gained " +progress+" vitality", Toast.LENGTH_SHORT).show();
+
+            }
+        }
 
     }
     @Override
@@ -244,10 +261,25 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
 
         instance = instanceArrayList.get(first-1).get(second-1);
         setCardView(instance);
+        editor.putInt("Prg", progBar.getProgress());
         editor.putString("ID", instID);
         editor.commit();
         Toast.makeText(this, instID, Toast.LENGTH_SHORT).show();
         vitailityCount++;
+        int progress = Integer.parseInt(instance.getChapter());
+
+        if(progress!=0)
+        {
+            progBar.setProgress(progBar.getProgress() + progress);
+
+            if(progress <0){
+                Toast.makeText(this, "You've lost " +progress+" vitality", Toast.LENGTH_SHORT).show();
+            }
+            else {
+                Toast.makeText(this, "You've eaten and gained " +progress+" vitality", Toast.LENGTH_SHORT).show();
+
+            }
+        }
     }
     public void addInventory(Instance instance){
         try {

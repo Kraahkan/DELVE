@@ -153,13 +153,18 @@ public class SoundController {
         //playr = MediaPlayer.create(activityContext,R.raw. + soundName);
         // MediaPlayer.cre
 
-        Uri uri=Uri.parse("android.resource://"+activityContext.getPackageName()+"/raw/" + soundName);
-        MediaPlayer mp = MediaPlayer.create(activityContext, uri);
+        try {
+
+            Uri uri = Uri.parse("android.resource://" + activityContext.getPackageName() + "/raw/" + soundName);
+            MediaPlayer mp = MediaPlayer.create(activityContext, uri);
 
 
-        // final float logVolume = (float) (1 - (Math.log(MAX_VOLUME - volume) / Math.log(MAX_VOLUME)));
-        //mp.setVolume(logVolume, logVolume);
-        mp.start();
+            // final float logVolume = (float) (1 - (Math.log(MAX_VOLUME - volume) / Math.log(MAX_VOLUME)));
+            //mp.setVolume(logVolume, logVolume);
+            mp.start();
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
 
     }
 
