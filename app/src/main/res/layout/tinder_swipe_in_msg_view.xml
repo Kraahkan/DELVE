@@ -10,7 +10,11 @@
         android:layout_height="wrap_content"
         android:layout_margin="40dp"
         android:text="Right"
-        android:textColor="@color/textViewColor"
+        android:textColor="@color/white"
         android:textSize="32sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:shadowColor="#999999"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="3"/>
 </LinearLayout>

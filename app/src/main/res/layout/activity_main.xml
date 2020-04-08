@@ -1,36 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/parentFrameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/parentLayout"
     android:background="@drawable/gradient_list"
     android:orientation="vertical">
 
     <LinearLayout
-        android:id="@+id/parentLinearLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/storyTextView"
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
             android:layout_height="130dp"
             android:layout_margin="15dp"
+            android:layout_marginTop="60dp"
             android:gravity="center"
-            android:textColor="@color/textViewColor"
+            android:textColor="#111111"
             android:text="@string/storyText"
             android:textSize="18sp"
             android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="120dp"
+        android:orientation="vertical"
+        android:paddingLeft="22dp"
+        android:paddingTop="150dp"
+        android:paddingRight="22dp">
 
         <com.mindorks.placeholderview.SwipeDirectionalView
             android:id="@+id/swipeView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp" />
-
+            android:layout_gravity="center|fill"
+            android:clickable="true" />
     </LinearLayout>
 
     <LinearLayout
@@ -42,10 +54,12 @@
         android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/rejectBtn"
+            android:id="@+id/exploreBtn"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/inspect" />
+            android:visibility="invisible"
+            android:background="@drawable/inspect"
+            android:onClick="explore()" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -70,16 +84,18 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:gravity="center"
-                android:textColor="@color/textViewColor"
                 android:text="Vitality"
+                android:textColor="#111111"
                 android:textStyle="bold" />
         </LinearLayout>
 
         <ImageButton
-            android:id="@+id/acceptBtn"
+            android:id="@+id/inspectBtn"
             android:layout_width="50dp"
+            android:visibility="invisible"
             android:layout_height="50dp"
-            android:background="@drawable/explore" />
+            android:background="@drawable/explore"
+            android:onClick="inspect()" />
 
     </LinearLayout>
 
