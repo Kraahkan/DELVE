@@ -1,26 +1,12 @@
-<<<<<<< HEAD
 <component name="libraryTable">
   <library name="Gradle: com.mindorks.android:placeholderview:1.0.3@aar">
     <CLASSES>
-      <root url="jar://C:/Android-Gradle/.gradle/caches/transforms-2/files-2.1/90904431e91ab3fb830f574663c50a92/jars/classes.jar!/" />
-      <root url="file://C:/Android-Gradle/.gradle/caches/transforms-2/files-2.1/90904431e91ab3fb830f574663c50a92/res" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/c9313a66279a2f1b5e001364644de01b/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/c9313a66279a2f1b5e001364644de01b/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://C:/Android-Gradle/.gradle/caches/modules-2/files-2.1/com.mindorks.android/placeholderview/1.0.3/db5d29ec00d1604970bffef5134be8b0b605cbdc/placeholderview-1.0.3-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.mindorks.android/placeholderview/1.0.3/db5d29ec00d1604970bffef5134be8b0b605cbdc/placeholderview-1.0.3-sources.jar!/" />
     </SOURCES>
   </library>
-=======
-<component name="libraryTable">
-  <library name="Gradle: com.mindorks.android:placeholderview:1.0.3@aar">
-    <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e2f37a92a37d408adf6e04a00df09c8d/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e2f37a92a37d408adf6e04a00df09c8d/res" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mindorks.android/placeholderview/1.0.3/db5d29ec00d1604970bffef5134be8b0b605cbdc/placeholderview-1.0.3-sources.jar!/" />
-    </SOURCES>
-  </library>
->>>>>>> CarlinStuff
 </component>

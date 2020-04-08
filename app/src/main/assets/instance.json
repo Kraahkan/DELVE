@@ -1,42 +1,4 @@
 [
-<<<<<<< HEAD
-    {
-      "instanceID": 1.1,
-      "chapter": "The Fall",
-      "title": "The White",
-      "art": "dullForest",
-      "storyText": "The sombre sky casts grey tones upon the dull woodland. A feral cry meets your ears.",
-      "positiveText": "Move deeper",
-      "negativeText": "Keep going",
-      "positiveID": 1.2,
-      "negativeID": 1.3,
-      "soundEffect": "fx_shivers",
-      "ambiance": "amb_wind_icerain",
-      "music": "mus_landr_wildlife_low_warm",
-      "color": "white"
-    },
-    {
-      "instanceID": 1.2,
-      "chapter": "",
-      "title": "The White",
-      "art": "woodlandWave",
-      "storyText": "A wave of trees cuts an upward line across the mountain above.
-",
-      "positiveText": "Move into the trees",
-      "negativeText": "Leave the forest",
-      "positiveID": 1.3,
-      "negativeID": 1.4,
-      "soundEffect": "fx_footsteps_snow_crunchy1",
-      "ambiance": "",
-      "music": "mus_landr_wildlife_low_warm",
-      "color": "white"
-    },
-  {
-    "instanceID": 1.3,
-    "chapter": "",
-    "title": "The White",
-    "art": "gnarledTree",
-=======
   {
     "instanceID": 1.1,
     "chapter": "0",
@@ -72,7 +34,6 @@
     "chapter": "0",
     "title": "The White",
     "art": "gnarled_tree",
->>>>>>> CarlinStuff
     "storyText": "A gnarled tree is the only sign of death in this ocean of orange.",
     "positiveText": "Head further",
     "negativeText": "Move to the mountain",
@@ -82,41 +43,12 @@
     "ambiance": "",
     "music": "",
     "color": "white"
-<<<<<<< HEAD
-  },
-  {
-    "instanceID": 1.4,
-    "chapter": "",
-    "title": "The White",
-    "art": "edgeOrange",
-    "storyText": "Skies darken as you reach the end of the trees.
-",
-    "positiveText": "Head up the mountain",
-    "negativeText": "Go through the forest",
-    "positiveID": 1.5,
-    "negativeID": 1.6,
-    "soundEffect": "fx_footsteps_snow_crunchy3",
-    "ambiance": "",
-    "music": "",
-    "color": "white"
-  },
-  {
-    "instanceID": 1.5,
-    "chapter": "",
-    "title": "The Mantle",
-    "art": "snowyCanyon",
-    "storyText": "The way is silent, the snow in the canyon untouched and unmarred by human steps.",
-    "positiveText": "Into the forest",
-    "negativeText": "East into the pines",
-    "positiveID": 1.6,
-    "negativeID": 1.7,
-=======
   },
   {
     "instanceID": 1.4,
     "chapter": "0",
     "title": "The White",
-    "art": "edge_orange",
+    "art": "edgeOrange",
     "storyText": "Skies darken as you reach the end of the trees.",
     "positiveText": "Head up the mountain",
     "negativeText": "Go through the forest",
@@ -131,16 +63,12 @@
     "instanceID": 1.5,
     "chapter": "0",
     "title": "The Mantle",
-    "art": "snowy_canyon",
+    "art": "snowyCanyon",
     "storyText": "The way is silent, the snow in the canyon untouched and unmarred by human steps.",
     "positiveText": "Into the forest",
     "negativeText": "East into the pines",
     "positiveID": 1.6,
-    "negativeID": 1.7,
-    "soundEffect": "fx_footsteps_snow_crunchy1",
-    "ambiance": "",
-    "music": "",
-    "color": "white"
+    "negativeID": 1.7
   },
   {
     "instanceID": 1.6,
@@ -226,38 +154,12 @@
     "negativeText": "",
     "positiveID": 2.3,
     "negativeID": 2.4,
->>>>>>> CarlinStuff
     "soundEffect": "fx_footsteps_snow_crunchy1",
     "ambiance": "",
     "music": "",
     "color": "white"
   },
   {
-<<<<<<< HEAD
-    "instanceID": 1.6,
-    "chapter": "",
-    "title": "The White",
-    "art": "forestSlope",
-    "storyText": "The pines slopes upward, and a highland wind impels your steps.",
-    "positiveText": "Climb further",
-    "negativeText": "Turn into the woods",
-    "positiveID": 1.7,
-    "negativeID": 1.8,
-    "soundEffect": "fx_footsteps_snow_crunchy2",
-    "ambiance": "",
-    "music": ""
-  },
-  {
-    "instanceID": 1.7,
-    "chapter": "",
-    "title": "The White",
-    "art": "orangeForest",
-    "storyText": "The pine leaves darken, a ginger brown against the blue sky.",
-    "positiveText": "",
-    "negativeText": "",
-    "positiveID": 1.8,
-    "negativeID": 1.9,
-=======
     "instanceID": 2.3,
     "chapter": "0",
     "title": "The Tracks",
@@ -327,55 +229,10 @@
     "negativeText": "",
     "positiveID": 2.8,
     "negativeID": 2.9,
->>>>>>> CarlinStuff
     "soundEffect": "fx_footsteps_snow_crunchy3",
     "ambiance": "",
     "music": "",
     "color": "white"
-<<<<<<< HEAD
-  },
-  {
-    "instanceID": 1.8,
-    "chapter": "",
-    "title": "The Woodland",
-    "art": "whiteForest",
-    "storyText": "The footprints fade and then disappear. Above you, the trees grow taller.",
-    "positiveText": "",
-    "negativeText": "",
-    "positiveID": 1.9,
-    "negativeID": 1.10,
-    "soundEffect": "fx_footsteps_snow_crunchy1",
-    "ambiance": "",
-    "music": "mus_landr_expedition_low_warm",
-    "color": "white"
-  },
-{
-    "instanceID": 1.9,
-    "chapter": "",
-    "title": "The Woodland,
-    "art": "noOrange",
-    "storyText": "The orange tree tops fade to black, and the mountain peaks appear closer.",
-    "positiveText": "",
-    "negativeText": "",
-    "positiveID": 1.10,
-    "negativeID": 1.11,
-    "soundEffect": "fx_footsteps_snow_crunchy2",
-    "ambiance": "",
-    "music": "",
-    "color": "white"
-  },
-{
-    "instanceID": 1.10,
-    "chapter": "",
-    "title": "The Woodland",
-    "art": "whiteForest",
-    "storyText": "The footprints fade and then disappear. Above you, the trees grow taller.",
-    "positiveText": "",
-    "negativeText": "",
-    "positiveID": 1.11,
-    "negativeID": 1.12,
-    "soundEffect": "fx_footsteps_snow_crunchy3",
-=======
   },
   {
     "instanceID": 2.8,
@@ -457,30 +314,16 @@
     "chapter": "0",
     "title": "Unknown",
     "art": "blizzard",
-    "storyText": "You heave eyes open. A snowstorm rages before you.",
+    "storyText": "You have eyes open. A snowstorm rages before you.",
     "positiveText": "Listen to the wind",
     "negativeText": "Move into the cold",
     "positiveID": 1.5,
     "negativeID": 1.6,
     "soundEffect": "fx_shiver2",
->>>>>>> CarlinStuff
     "ambiance": "",
     "music": "",
     "color": "white"
   },
-<<<<<<< HEAD
-{
-    "instanceID": 1.11,
-    "chapter": "",
-    "title": "The Woodland",
-    "art": "darkForest",
-    "storyText": "A howl pierces your ears, breaking the serene silence.",
-    "positiveText": "",
-    "negativeText": "",
-    "positiveID": 1.12,
-    "negativeID": 1.13,
-    "soundEffect": "fx_footsteps_snow_crunchy1",
-=======
   {
     "instanceID": 4.3,
     "chapter": "0",
@@ -492,24 +335,10 @@
     "positiveID": 4.5,
     "negativeID": 4.5,
     "soundEffect": "fx_shiver",
->>>>>>> CarlinStuff
     "ambiance": "",
     "music": "",
     "color": "white"
   },
-<<<<<<< HEAD
-{
-    "instanceID": 1.12,
-    "chapter": "",
-    "title": "The Tracks",
-    "art": "darkTracks",
-    "storyText": "The trees cover the sky, creating a shroud of blackness upon the rusted rails.",
-    "positiveText": "",
-    "negativeText": "",
-    "positiveID": 1.13,
-    "negativeID": 1.14,
-    "soundEffect": "fx_footsteps_snow_crunchy2",
-=======
   {
     "instanceID": 4.4,
     "chapter": "0",
@@ -521,24 +350,10 @@
     "positiveID": 4.5,
     "negativeID": 4.5,
     "soundEffect": "fx_shiver2",
->>>>>>> CarlinStuff
     "ambiance": "",
     "music": "",
     "color": "white"
   },
-<<<<<<< HEAD
-{
-    "instanceID": 1.13,
-    "chapter": "",
-    "title": "The Tracks",
-    "art": "forestTracks",
-    "storyText": "Ahead of you the forest is dense. To your right, footprints trail into the treeline.",
-    "positiveText": "",
-    "negativeText": "",
-    "positiveID": 1.14,
-    "negativeID": 1.15,
-    "soundEffect": "fx_footsteps_snow_crunchy3",
-=======
   {
     "instanceID": 4.5,
     "chapter": "0",
@@ -579,24 +394,10 @@
     "positiveID": 4.8,
     "negativeID": 4.8,
     "soundEffect": "fx_voices",
->>>>>>> CarlinStuff
     "ambiance": "",
     "music": "",
     "color": "white"
   },
-<<<<<<< HEAD
-{
-    "instanceID": 1.14,
-    "chapter": "",
-    "title": "The Climb",
-    "art": "rockySteps",
-    "storyText": "The way is difficult, the snow cast rocks piercing your feet with every odd step.",
-    "positiveText": "",
-    "negativeText": "",
-    "positiveID": 1.15,
-    "negativeID": 1.16,
-    "soundEffect": "fx_footsteps_snow_crunchy1",
-=======
   {
     "instanceID": 4.8,
     "chapter": "0",
@@ -608,73 +409,10 @@
     "positiveID": 5.1,
     "negativeID": 5.1,
     "soundEffect": "darkness",
->>>>>>> CarlinStuff
     "ambiance": "",
     "music": "",
     "color": "white"
   },
-<<<<<<< HEAD
-{
-    "instanceID": 1.15,
-    "chapter": "",
-    "title": "The Climb",
-    "art": "snowSummit",
-    "storyText": "A monolith of rock rises above. It splits the snow in two, and casts it's shadow upon your face.",
-    "positiveText": "",
-    "negativeText": "",
-    "positiveID": 1.16,
-    "negativeID": 1.17,
-    "soundEffect": "fx_footsteps_snow_crunchy2",
-    "ambiance": "",
-    "music": "",
-    "color": "white"
-  },
-{
-    "instanceID": 1.16,
-    "chapter": "",
-    "title": "The Summit",
-    "art": "summitView",
-    "storyText": "You reach the summit and look onward. To the west lies a sea of orange. To the east the tree tops are frayed and thin.",
-    "positiveText": "",
-    "negativeText": "",
-    "positiveID": 1.17,
-    "negativeID": 1.18,
-    "soundEffect": "fx_footsteps_snow_crunchy3",
-    "ambiance": "",
-    "music": "",
-    "color": "white"
-  },
-{
-    "instanceID": 1.17,
-    "chapter": "",
-    "title": "The White",
-    "art": "darkTreeline",
-    "storyText": "The treeline is dark. In front of it shimmers a snowy mist. ",
-    "positiveText": "",
-    "negativeText": "",
-    "positiveID": 1.18,
-    "negativeID": 1.19,
-    "soundEffect": "fx_footsteps_snow_crunchy1",
-    "ambiance": "",
-    "music": "",
-    "color": "white"
-  },
-{
-    "instanceID": 1.18,
-    "chapter": "",
-    "title": "The Woodland",
-    "art": "blueTree",
-    "storyText": "The tree reaches up to the grey sky, as if gasping for air. At it's base, shadows shroud the bark.",
-    "positiveText": "",
-    "negativeText": "",
-    "positiveID": 1.20,
-    "negativeID": 1.20,
-    "soundEffect": "fx_footsteps_snow_crunchy2",
-    "ambiance": "amb_night",
-    "music": "mus_landr_into_the_snow_low_warm",
-    "color": "white"
-  }
-]
   {
     "instanceID": 5.1,
     "chapter": "0",
@@ -871,4 +609,3 @@
     "color": ""
   }
 ]
->>>>>>> CarlinStuff
