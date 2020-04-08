@@ -74,7 +74,7 @@ public class TinderCard {
 
         rightText.setText(cardInstance.getPositiveText());
         leftText.setText(cardInstance.getNegativeText());
-         // place.setText(cardInstance.getTitle());
+        place.setText("");
 
         //image loader for card.
         String image = cardInstance.getArt();
