@@ -264,7 +264,6 @@ public class MainActivity extends AppCompatActivity implements TinderCard.Callba
         editor.putInt("Prg", progBar.getProgress());
         editor.putString("ID", instID);
         editor.commit();
-        Toast.makeText(this, instID, Toast.LENGTH_SHORT).show();
         vitailityCount++;
         int progress = Integer.parseInt(instance.getChapter());
 
